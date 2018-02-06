@@ -11,11 +11,12 @@ namespace DeGokkers
         public class GreyhoundMain
         {
             public int RaceTrackLength; //De lengte van de renbaan
-            public PictureBox MyPictureBox = null;
+            //public PictureBox MyPictureBox = null;
             public Random Randomizer; //Een instantie van Random (= Willekeurig)
-            public bool Run(false);
 
+            public void Run()
             {
+                bool Run = true;
                 //Ga willekeurig 1, 2, 3 of 4 posities naar voren.
                 //Werk de positie van PictureBox bij op het formulier.
                 //Geef de waarde ‘true’ terug als ik de race win.
@@ -23,6 +24,7 @@ namespace DeGokkers
 
             public void TakeStartingPosition()
             {
+
                 //Wijzig mijn locatie naar de startlijn.
             }
 
@@ -32,3 +34,4 @@ namespace DeGokkers
             }
         }
     }
+}

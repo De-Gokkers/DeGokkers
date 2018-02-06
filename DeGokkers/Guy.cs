@@ -14,8 +14,8 @@ namespace DeGokkers
             public Bet MyBet; // Een instantie van Bet()
             public int Cash; // Het saldo van de gokker
                              //Deze twee velden zijn de gokkers GUI controls op het formulier
-            public RadioButton MyRadiobutton;
-            public Label MyLabel;
+            //public RadioButton MyRadiobutton;
+            //public Label MyLabel;
             public void UpdateLabels()
             {
                 //Verander mijn label in de omschrijving van mijn weddenschap.
@@ -32,27 +32,37 @@ namespace DeGokkers
             }
             public void ClearBet()
             {
-                //Maak de weddenschap leeg.
+                ClearBet();
 
             }
+
             public void Collect(int Winner)
             {
                 //Betaal mijn weddenschap uit.
                 //Maak mijn weddenschap leeg.
                 //Werk mijn labels bij.
             }
+
             public void Sietse()
             {
+                string Name = "Sietse";
+
                 int TotalAmount = 100; // Het bedrag dat Sietse heeft in €.
 
             }
+
             public void Peter()
             {
+                string Name = "Peter";
+
                 int TotalAmount = 100; // Het bedrag dat Peter heeft in €.
 
             }
+
             public void Fer()
             {
+                string Name = "Fer";
+
                 int TotalAmount = 100; // Het bedrag dat Fer heeft in €.
 
             }

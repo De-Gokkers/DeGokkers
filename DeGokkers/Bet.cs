@@ -29,6 +29,7 @@ namespace DeGokkers
                 //Als de hond gewonnen heeft, retourneer dan het bedrag dat gewed is
                 //Anders, retourneer het tegengestelde van het gewedde bedrag.
             }
-        }
+        }
+
     }
 }

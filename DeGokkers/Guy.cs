@@ -41,6 +41,24 @@ namespace DeGokkers
                 //Maak mijn weddenschap leeg.
                 //Werk mijn labels bij.
             }
+            public void Sietse()
+            {
+                int TotalAmount = 100; // Het bedrag dat Sietse heeft in €.
+
+            }
+            public void Peter()
+            {
+                int TotalAmount = 100; // Het bedrag dat Peter heeft in €.
+
+            }
+            public void Fer()
+            {
+                int TotalAmount = 100; // Het bedrag dat Fer heeft in €.
+
+            }
+
+
+
         }
     }
 }

@@ -12,6 +12,7 @@ namespace DeGokkers
 {
     public partial class Form1 : Form
     {
+        int GuyNumber = 0;
         public Form1()
         {
             InitializeComponent();
@@ -22,24 +23,19 @@ namespace DeGokkers
 
         }
 
-        public void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         public void radiobutton1_MouseClick(object sender, MouseEventArgs e)
         {
-            MessageBox.Show("Hey");
+            int GuyNumber = 1;
         }
 
         public void radioButton2_MouseClick(object sender, MouseEventArgs e)
         {
-
+            int GuyNumber = 2;
         }
 
         public void radioButton3_MouseClick(object sender, MouseEventArgs e)
         {
-
+            int GuyNumber = 3;
         }
 
         public void button2_MouseClick(object sender, MouseEventArgs e)
@@ -48,6 +44,40 @@ namespace DeGokkers
         }
 
         private void button1_MouseClick(object sender, MouseEventArgs e)
+        {
+            do
+            {
+                switch (GuyNumber)
+                {
+                    case 1:
+                        label5.Text = "Sietse heeft gewed.";
+                        break;
+
+                    case 2:
+                        label6.Text = "Peter heeft gewed.";
+                        break;
+
+                    case 3:
+                        label7.Text = "Fer heeft gewed.";
+                        break;
+
+                    default:
+                        break;
+                }
+            } while (GuyNumber >= 0);
+        }
+
+        private void label5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -13,6 +13,7 @@ namespace DeGokkers
             public int RaceTrackLength; //De lengte van de renbaan
             //public PictureBox MyPictureBox = null;
             public Random Randomizer; //Een instantie van Random (= Willekeurig)
+            //test
 
             public void Run()
             {

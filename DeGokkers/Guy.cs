@@ -16,6 +16,7 @@ namespace DeGokkers
                              //Deze twee velden zijn de gokkers GUI controls op het formulier
             //public RadioButton MyRadiobutton;
             //public Label MyLabel;
+            // test
             public void UpdateLabels()
             {
                 //Verander mijn label in de omschrijving van mijn weddenschap.

@@ -14,6 +14,7 @@ namespace DeGokkers
             public int Dog; //Het nummer van de hond waarop weddenschap is afgesloten.
             public Guy Bettor; //De gokker die gewed heeft.
             public string GetDescription()
+            test
             {
                 //Retourneer een string die aangeeft wie de weddenschap heeft gedaan,
                 //voor welk bedrag er is gewed en op welke hond er is gewed.

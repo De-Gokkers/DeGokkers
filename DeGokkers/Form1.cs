@@ -25,17 +25,17 @@ namespace DeGokkers
 
         public void radiobutton1_MouseClick(object sender, MouseEventArgs e)
         {
-            int GuyNumber = 1;
+            GuyNumber = 1;
         }
 
         public void radioButton2_MouseClick(object sender, MouseEventArgs e)
         {
-            int GuyNumber = 2;
+            GuyNumber = 2;
         }
 
         public void radioButton3_MouseClick(object sender, MouseEventArgs e)
         {
-            int GuyNumber = 3;
+            GuyNumber = 3;
         }
 
         public void button2_MouseClick(object sender, MouseEventArgs e)
@@ -45,26 +45,23 @@ namespace DeGokkers
 
         private void button1_MouseClick(object sender, MouseEventArgs e)
         {
-            do
+            switch (GuyNumber)
             {
-                switch (GuyNumber)
-                {
-                    case 1:
-                        label5.Text = "Sietse heeft gewed.";
-                        break;
+                case 1:
+                    label5.Text = "Sietse heeft gewed.";
+                    break;
 
-                    case 2:
-                        label6.Text = "Peter heeft gewed.";
-                        break;
+                case 2:
+                    label6.Text = "Peter heeft gewed.";
+                    break;
 
-                    case 3:
-                        label7.Text = "Fer heeft gewed.";
-                        break;
+                case 3:
+                    label7.Text = "Fer heeft gewed.";
+                    break;
 
-                    default:
-                        break;
-                }
-            } while (GuyNumber >= 0);
+                default:
+                    break;
+            }
         }
 
         private void label5_TextChanged(object sender, EventArgs e)

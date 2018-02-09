@@ -12,7 +12,7 @@ namespace DeGokkers
 {
     public partial class Form1 : Form
     {
-        int GuyNumber = 0;
+        int GuyNumber = 1;
         public Form1()
         {
             InitializeComponent();
@@ -75,6 +75,16 @@ namespace DeGokkers
         }
 
         private void label7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void domainUpDown1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void domainUpDown2_Click(object sender, EventArgs e)
         {
 
         }

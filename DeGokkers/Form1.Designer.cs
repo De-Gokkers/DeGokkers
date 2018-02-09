@@ -119,6 +119,7 @@
             this.domainUpDown1.Size = new System.Drawing.Size(120, 22);
             this.domainUpDown1.TabIndex = 7;
             this.domainUpDown1.Text = "1";
+            this.domainUpDown1.Click += new System.EventHandler(this.domainUpDown1_Click);
             // 
             // label2
             // 
@@ -138,6 +139,7 @@
             this.domainUpDown2.Size = new System.Drawing.Size(120, 22);
             this.domainUpDown2.TabIndex = 9;
             this.domainUpDown2.Text = "1";
+            this.domainUpDown2.Click += new System.EventHandler(this.domainUpDown2_Click);
             // 
             // button2
             // 

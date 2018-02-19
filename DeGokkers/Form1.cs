@@ -20,7 +20,7 @@ namespace DeGokkers
 
         public void Form1_Load(object sender, EventArgs e)
         {
-
+        
         }
 
         public void radiobutton1_MouseClick(object sender, MouseEventArgs e)
@@ -85,6 +85,31 @@ namespace DeGokkers
         }
 
         private void domainUpDown2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radiobutton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
         {
 
         }

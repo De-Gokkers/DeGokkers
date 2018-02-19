@@ -44,27 +44,11 @@ namespace DeGokkers
                 //Werk mijn labels bij.
             }
 
-            public void Sietse()
+            public void guy()
             {
-                string Name = "Sietse";
+                String Name;
+                int TotalAmount = 100; // Het bedrag dat de persoon heeft in €.
 
-                int TotalAmount = 100; // Het bedrag dat Sietse heeft in €.
-
-            }
-
-            public void Peter()
-            {
-                string Name = "Peter";
-
-                int TotalAmount = 100; // Het bedrag dat Peter heeft in €.
-
-            }
-
-            public void Fer()
-            {
-                string Name = "Fer";
-
-                int TotalAmount = 100; // Het bedrag dat Fer heeft in €.
 
             }
 

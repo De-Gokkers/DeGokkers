@@ -102,6 +102,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Wedt";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
             // 
             // label1
@@ -138,6 +139,7 @@
             this.button2.TabIndex = 13;
             this.button2.Text = "Go!";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             this.button2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button2_MouseClick);
             // 
             // label3
@@ -155,7 +157,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(605, 516);
+            this.label4.Location = new System.Drawing.Point(616, 516);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(139, 20);
@@ -185,9 +187,9 @@
             this.label5.Location = new System.Drawing.Point(602, 540);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(139, 13);
+            this.label5.Size = new System.Drawing.Size(154, 13);
             this.label5.TabIndex = 18;
-            this.label5.Text = "Sietse heeft nog niet gewed";
+            this.label5.Text = "     Sietse heeft nog niet gewed";
             this.label5.TextChanged += new System.EventHandler(this.label5_TextChanged);
             // 
             // label6
@@ -196,9 +198,9 @@
             this.label6.Location = new System.Drawing.Point(605, 564);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(135, 13);
+            this.label6.Size = new System.Drawing.Size(150, 13);
             this.label6.TabIndex = 19;
-            this.label6.Text = "Peter heeft nog niet gewed";
+            this.label6.Text = "     Peter heeft nog niet gewed";
             this.label6.TextChanged += new System.EventHandler(this.label6_TextChanged);
             // 
             // label7
@@ -207,9 +209,9 @@
             this.label7.Location = new System.Drawing.Point(611, 588);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(125, 13);
+            this.label7.Size = new System.Drawing.Size(140, 13);
             this.label7.TabIndex = 20;
-            this.label7.Text = "Fer heeft nog niet gewed";
+            this.label7.Text = "     Fer heeft nog niet gewed";
             this.label7.TextChanged += new System.EventHandler(this.label7_TextChanged);
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 

@@ -113,5 +113,28 @@ namespace DeGokkers
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int testtest = 5;
+            int testtest2 = 2;
+            label5.Text = " Sietse heeft " + testtest + " gewed op nummer " + testtest2 + "";
+            label6.Text = " Peter heeft " + testtest + " gewed op nummer " + testtest2 + "";
+            label7.Text = " Fer heeft " + testtest + " gewed op nummer " + testtest2 + "";
+
+
+            radiobutton1.Enabled = false;
+            radioButton2.Enabled = false;
+            radioButton3.Enabled = false;
+
+            numericUpDown1.Enabled = false;
+            numericUpDown2.Enabled = false;
+            button1.Enabled = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

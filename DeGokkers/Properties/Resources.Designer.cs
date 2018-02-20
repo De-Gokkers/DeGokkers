@@ -73,59 +73,9 @@ namespace DeGokkers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Jachtluipaard1 {
-            get {
-                object obj = ResourceManager.GetObject("Jachtluipaard1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Jachtluipaard2 {
-            get {
-                object obj = ResourceManager.GetObject("Jachtluipaard2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Jachtluipaard3 {
-            get {
-                object obj = ResourceManager.GetObject("Jachtluipaard3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Jachtluipaard4 {
-            get {
-                object obj = ResourceManager.GetObject("Jachtluipaard4", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap running_game1 {
             get {
                 object obj = ResourceManager.GetObject("running_game1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap running_game2 {
-            get {
-                object obj = ResourceManager.GetObject("running_game2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

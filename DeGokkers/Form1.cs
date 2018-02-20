@@ -20,7 +20,7 @@ namespace DeGokkers
 
         public void Form1_Load(object sender, EventArgs e)
         {
-        
+            
         }
 
         public void radiobutton1_MouseClick(object sender, MouseEventArgs e)
@@ -136,5 +136,7 @@ namespace DeGokkers
         {
 
         }
+
+        
     }
 }

@@ -17,3 +17,13 @@ C:\Users\MaKe station\source\repos\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGok
 C:\Users\MaKe station\source\repos\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.csproj.CoreCompileInputs.cache
 C:\Users\MaKe station\source\repos\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.exe
 C:\Users\MaKe station\source\repos\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.pdb
+C:\Users\MaKe station\source\GitC#Projecten\DeGokkersRep\DeGokkers\bin\Debug\DeGokkers.exe.config
+C:\Users\MaKe station\source\GitC#Projecten\DeGokkersRep\DeGokkers\bin\Debug\DeGokkers.exe
+C:\Users\MaKe station\source\GitC#Projecten\DeGokkersRep\DeGokkers\bin\Debug\DeGokkers.pdb
+C:\Users\MaKe station\source\GitC#Projecten\DeGokkersRep\DeGokkers\obj\Debug\DeGokkers.csprojResolveAssemblyReference.cache
+C:\Users\MaKe station\source\GitC#Projecten\DeGokkersRep\DeGokkers\obj\Debug\DeGokkers.Form1.resources
+C:\Users\MaKe station\source\GitC#Projecten\DeGokkersRep\DeGokkers\obj\Debug\DeGokkers.Properties.Resources.resources
+C:\Users\MaKe station\source\GitC#Projecten\DeGokkersRep\DeGokkers\obj\Debug\DeGokkers.csproj.GenerateResource.Cache
+C:\Users\MaKe station\source\GitC#Projecten\DeGokkersRep\DeGokkers\obj\Debug\DeGokkers.csproj.CoreCompileInputs.cache
+C:\Users\MaKe station\source\GitC#Projecten\DeGokkersRep\DeGokkers\obj\Debug\DeGokkers.exe
+C:\Users\MaKe station\source\GitC#Projecten\DeGokkersRep\DeGokkers\obj\Debug\DeGokkers.pdb

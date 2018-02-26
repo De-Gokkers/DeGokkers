@@ -160,30 +160,53 @@ namespace DeGokkers
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            if (pictureBox1.Location.X >= 700)
+            {
+                this.textBox1.Visible = true;
+            }
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
+            if (pictureBox3.Location.X >= 700)
+            {
+                this.textBox1.Visible = true;
+            }
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-
+            if (pictureBox4.Location.X >= 700)
+            {
+                this.textBox1.Visible = true;
+            }
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-
+            if (pictureBox5.Location.X >= 700)
+            {
+                this.textBox1.Visible = true;
+            }
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-
+            if (pictureBox6.Location.X >= 700)
+            {
+                this.textBox1.Visible = true;
+            }
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            if (pictureBox7.Location.X >= 700)
+            {
+                this.textBox1.Visible = true;
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -48,8 +48,21 @@ namespace DeGokkers
             {
                 String Name;
                 int TotalAmount = 100; // Het bedrag dat de persoon heeft in €.
+                int BetAmount;
+                int AnimalBet;
+            }
+            public void guys()
+            {
+                //this.TotalAmount;
+            }
 
+            public void guyArray()
+            {
+                int[] guys = new int[5];
 
+                guys[0] = 1;
+                guys[1] = 1;
+                guys[2] = 1;
             }
 
 

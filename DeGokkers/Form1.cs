@@ -132,49 +132,20 @@ namespace DeGokkers
             numericUpDown2.Enabled = false;
             button1.Enabled = false;
 
-            while (pictureBox12.Location.X <= 800 && pictureBox3.Location.X <= 800 && pictureBox4.Location.X <= 800 && pictureBox5.Location.X <= 800 && pictureBox1.Location.X <= 800 && pictureBox6.Location.X <= 800)
+            while (pictureBox1.Location.X <= 800 && pictureBox3.Location.X <= 800 && pictureBox4.Location.X <= 800 && pictureBox5.Location.X <= 800 && pictureBox6.Location.X <= 800 && pictureBox7.Location.X <= 800)
             {
                 Random rnd = new Random();
-                pictureBox12.Location = new Point(pictureBox12.Location.X + rnd.Next(1, 5), pictureBox12.Location.Y);
+                pictureBox1.Location = new Point(pictureBox1.Location.X + rnd.Next(1, 5), pictureBox1.Location.Y);
                 pictureBox3.Location = new Point(pictureBox3.Location.X + rnd.Next(1, 5), pictureBox3.Location.Y);
                 pictureBox4.Location = new Point(pictureBox4.Location.X + rnd.Next(1, 5), pictureBox4.Location.Y);
                 pictureBox5.Location = new Point(pictureBox5.Location.X + rnd.Next(1, 5), pictureBox5.Location.Y);
-                pictureBox1.Location = new Point(pictureBox1.Location.X + rnd.Next(1, 5), pictureBox1.Location.Y);
                 pictureBox6.Location = new Point(pictureBox6.Location.X + rnd.Next(1, 5), pictureBox6.Location.Y);
+                pictureBox7.Location = new Point(pictureBox7.Location.X + rnd.Next(1, 5), pictureBox7.Location.Y);
 
                 Thread.Sleep(10);
                 this.Refresh();
             }
 
-            if (pictureBox1.Location.X >= 800)
-            {
-                MessageBox.Show("Nummer 1 heeft gewonnen");
-            }
-
-            if (pictureBox12.Location.X >= 800)
-            {
-                MessageBox.Show("Nummer 2 heeft gewonnen");
-            }
-
-            if (pictureBox3.Location.X >= 800)
-            {
-                MessageBox.Show("Nummer 3 heeft gewonnen");
-            }
-
-            if (pictureBox4.Location.X >= 800)
-            {
-                MessageBox.Show("Nummer 4 heeft gewonnen");
-            }
-
-            if (pictureBox5.Location.X >= 800)
-            {
-                MessageBox.Show("Nummer 5 heeft gewonnen");
-            }
-
-            if (pictureBox6.Location.X >= 800)
-            {
-                MessageBox.Show("Nummer 5 heeft gewonnen");
-            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -189,33 +160,55 @@ namespace DeGokkers
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            
-        }
-
-        private void pictureBox12_Click(object sender, EventArgs e)
-        {
-            
+            if (pictureBox1.Location.X >= 700)
+            {
+                this.textBox1.Visible = true;
+            }
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            
+            if (pictureBox3.Location.X >= 700)
+            {
+                this.textBox1.Visible = true;
+            }
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            
+            if (pictureBox4.Location.X >= 700)
+            {
+                this.textBox1.Visible = true;
+            }
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            
+            if (pictureBox5.Location.X >= 700)
+            {
+                this.textBox1.Visible = true;
+            }
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            
+            if (pictureBox6.Location.X >= 700)
+            {
+                this.textBox1.Visible = true;
+            }
         }
 
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            if (pictureBox7.Location.X >= 700)
+            {
+                this.textBox1.Visible = true;
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

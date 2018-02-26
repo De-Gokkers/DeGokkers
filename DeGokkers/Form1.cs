@@ -117,12 +117,18 @@ namespace DeGokkers
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int testtest = 5;
-            int testtest2 = 2;
-            label5.Text = " Sietse heeft " + testtest + " gewed op nummer " + testtest2 + "";
-            label6.Text = " Peter heeft " + testtest + " gewed op nummer " + testtest2 + "";
-            label7.Text = " Fer heeft " + testtest + " gewed op nummer " + testtest2 + "";
+            int testtest = 5;           // dit is een test value!
+            int testtest2 = 2;          // dit is een test value!
+            label5.Text = "Sietse heeft " + testtest + " gewed op nummer " + testtest2 + "";
+            label6.Text = "Peter heeft " + testtest + " gewed op nummer " + testtest2 + "";
+            label7.Text = "Fer heeft " + testtest + " gewed op nummer " + testtest2 + "";
 
+            int sietseamounttest = 95;  // dit is een test value!
+            int peteramounttest = 95;   // dit is een test value!
+            int feramounttest = 95;     // dit is een test value!
+            label8.Text = "Sietse heeft €" + sietseamounttest + ",-";
+            label9.Text = "Peter heeft €" + peteramounttest + ",-";
+            label10.Text = "Fer heeft €" + feramounttest + ",-";
 
 
 

@@ -7,3 +7,13 @@ D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\DeGokkers\o
 D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.csproj.CoreCompileInputs.cache
 D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.exe
 D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.pdb
+C:\Users\MaKe station\source\repos\DeGokkers\DeGokkers\DeGokkers\bin\Debug\DeGokkers.exe.config
+C:\Users\MaKe station\source\repos\DeGokkers\DeGokkers\DeGokkers\bin\Debug\DeGokkers.exe
+C:\Users\MaKe station\source\repos\DeGokkers\DeGokkers\DeGokkers\bin\Debug\DeGokkers.pdb
+C:\Users\MaKe station\source\repos\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.csprojResolveAssemblyReference.cache
+C:\Users\MaKe station\source\repos\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.Form1.resources
+C:\Users\MaKe station\source\repos\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.Properties.Resources.resources
+C:\Users\MaKe station\source\repos\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.csproj.GenerateResource.Cache
+C:\Users\MaKe station\source\repos\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.csproj.CoreCompileInputs.cache
+C:\Users\MaKe station\source\repos\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.exe
+C:\Users\MaKe station\source\repos\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.pdb

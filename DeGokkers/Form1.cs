@@ -130,18 +130,6 @@ namespace DeGokkers
             label9.Text = "Peter heeft €" + peteramounttest + ",-";
             label10.Text = "Fer heeft €" + feramounttest + ",-";
 
-
-
-
-
-
-
-
-
-
-
-
-
             radiobutton1.Enabled = false;
             radioButton2.Enabled = false;
             radioButton3.Enabled = false;
@@ -164,32 +152,32 @@ namespace DeGokkers
                 this.Refresh();
             }
 
-            if (pictureBox1.Location.X >= 700)
+            if (pictureBox1.Location.X >= 800)
             {
                 MessageBox.Show("Nummer 1 heeft gewonnen.");
             }
 
-            if (pictureBox2.Location.X >= 700)
+            if (pictureBox2.Location.X >= 800)
             {
                 MessageBox.Show("Nummer 2 heeft gewonnen.");
             }
 
-            if (pictureBox3.Location.X >= 700)
+            if (pictureBox3.Location.X >= 800)
             {
                 MessageBox.Show("Nummer 3 heeft gewonnen.");
             }
 
-            if (pictureBox4.Location.X >= 700)
+            if (pictureBox4.Location.X >= 800)
             {
                 MessageBox.Show("Nummer 4 heeft gewonnen.");
             }
 
-            if (pictureBox5.Location.X >= 700)
+            if (pictureBox5.Location.X >= 800)
             {
                 MessageBox.Show("Nummer 5 heeft gewonnen.");
             }
 
-            if (pictureBox6.Location.X >= 700)
+            if (pictureBox6.Location.X >= 800)
             {
                 MessageBox.Show("Nummer 6 heeft gewonnen.");
             }

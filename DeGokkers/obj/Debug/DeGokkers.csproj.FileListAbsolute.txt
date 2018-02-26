@@ -37,3 +37,13 @@ C:\Users\Frank van Beek\OneDrive - ROC West-Brabant\Bijlagen\School OneDrive\rep
 C:\Users\Frank van Beek\OneDrive - ROC West-Brabant\Bijlagen\School OneDrive\repo\DeGokkers\obj\Debug\DeGokkers.csproj.CoreCompileInputs.cache
 C:\Users\Frank van Beek\OneDrive - ROC West-Brabant\Bijlagen\School OneDrive\repo\DeGokkers\obj\Debug\DeGokkers.exe
 C:\Users\Frank van Beek\OneDrive - ROC West-Brabant\Bijlagen\School OneDrive\repo\DeGokkers\obj\Debug\DeGokkers.pdb
+C:\Users\MaKe station\source\GitC#Projecten\DeGokkers\DeGokkers\bin\Debug\DeGokkers.exe.config
+C:\Users\MaKe station\source\GitC#Projecten\DeGokkers\DeGokkers\bin\Debug\DeGokkers.exe
+C:\Users\MaKe station\source\GitC#Projecten\DeGokkers\DeGokkers\bin\Debug\DeGokkers.pdb
+C:\Users\MaKe station\source\GitC#Projecten\DeGokkers\DeGokkers\obj\Debug\DeGokkers.csprojResolveAssemblyReference.cache
+C:\Users\MaKe station\source\GitC#Projecten\DeGokkers\DeGokkers\obj\Debug\DeGokkers.Form1.resources
+C:\Users\MaKe station\source\GitC#Projecten\DeGokkers\DeGokkers\obj\Debug\DeGokkers.Properties.Resources.resources
+C:\Users\MaKe station\source\GitC#Projecten\DeGokkers\DeGokkers\obj\Debug\DeGokkers.csproj.GenerateResource.Cache
+C:\Users\MaKe station\source\GitC#Projecten\DeGokkers\DeGokkers\obj\Debug\DeGokkers.csproj.CoreCompileInputs.cache
+C:\Users\MaKe station\source\GitC#Projecten\DeGokkers\DeGokkers\obj\Debug\DeGokkers.exe
+C:\Users\MaKe station\source\GitC#Projecten\DeGokkers\DeGokkers\obj\Debug\DeGokkers.pdb

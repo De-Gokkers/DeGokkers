@@ -46,23 +46,9 @@ namespace DeGokkers
 
         private void button1_MouseClick(object sender, MouseEventArgs e)
         {
-            switch (GuyNumber)
-            {
-                case 1:
-                    label5.Text = "Sietse heeft gewed.";
-                    break;
+            
 
-                case 2:
-                    label6.Text = "Peter heeft gewed.";
-                    break;
-
-                case 3:
-                    label7.Text = "Fer heeft gewed.";
-                    break;
-
-                default:
-                    break;
-            }
+           
         }
 
         private void label5_TextChanged(object sender, EventArgs e)
@@ -117,18 +103,7 @@ namespace DeGokkers
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int testtest = 5;           // dit is een test value!
-            int testtest2 = 2;          // dit is een test value!
-            label5.Text = "Sietse heeft " + testtest + " gewed op nummer " + testtest2 + "";
-            label6.Text = "Peter heeft " + testtest + " gewed op nummer " + testtest2 + "";
-            label7.Text = "Fer heeft " + testtest + " gewed op nummer " + testtest2 + "";
-
-            int sietseamounttest = 95;  // dit is een test value!
-            int peteramounttest = 95;   // dit is een test value!
-            int feramounttest = 95;     // dit is een test value!
-            label8.Text = "Sietse heeft €" + sietseamounttest + ",-";
-            label9.Text = "Peter heeft €" + peteramounttest + ",-";
-            label10.Text = "Fer heeft €" + feramounttest + ",-";
+            
 
             radiobutton1.Enabled = false;
             radioButton2.Enabled = false;
@@ -186,7 +161,37 @@ namespace DeGokkers
 
         private void button1_Click(object sender, EventArgs e)
         {
+            bool radiobutton1_CheckedChanged = true;
+            bool radioButton2_CheckedChanged = true;
+            bool radioButton3_CheckedChanged = true;
 
+            if (radiobutton1.Checked)
+            {
+                
+                object nmr_inzet = null;
+                int inzet1 = (int)numericUpDown1.Value;
+                int wed1 = Convert.ToInt32(numericUpDown2.Value);
+                object lbl_wed1 = null;
+                label5.Text = "Speler 1 heeft €" + inzet1 + " op cheetah nummer " + wed1 + " ingezet";
+            }
+
+            if (radioButton2.Checked)
+            {
+                object nmr_inzet2 = null;
+                int inzet2 = (int)numericUpDown1.Value;
+                int wed2 = Convert.ToInt32(numericUpDown2.Value);
+                object lbl_wed2 = null;
+                label6.Text = "Speler 2 heeft €" + inzet2 + " op cheetah nummer " + wed2 + " ingezet";
+            }
+
+            if (radioButton3.Checked)
+            {
+                object nmr_inzet3 = null;
+                int inzet3 = (int)numericUpDown1.Value;
+                int wed3 = Convert.ToInt32(numericUpDown2.Value);
+                object lbl_wed3 = null;
+                label7.Text = "Speler 3 heeft €" + inzet3 + " op cheetah nummer " + wed3 + " ingezet";
+            }
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -225,6 +230,26 @@ namespace DeGokkers
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
 
         }

@@ -47,3 +47,13 @@ C:\Users\MaKe station\source\GitC#Projecten\DeGokkers\DeGokkers\obj\Debug\DeGokk
 C:\Users\MaKe station\source\GitC#Projecten\DeGokkers\DeGokkers\obj\Debug\DeGokkers.csproj.CoreCompileInputs.cache
 C:\Users\MaKe station\source\GitC#Projecten\DeGokkers\DeGokkers\obj\Debug\DeGokkers.exe
 C:\Users\MaKe station\source\GitC#Projecten\DeGokkers\DeGokkers\obj\Debug\DeGokkers.pdb
+D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\bin\Debug\DeGokkers.exe.config
+D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\bin\Debug\DeGokkers.exe
+D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\bin\Debug\DeGokkers.pdb
+D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.csprojResolveAssemblyReference.cache
+D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.Form1.resources
+D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.Properties.Resources.resources
+D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.csproj.GenerateResource.Cache
+D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.csproj.CoreCompileInputs.cache
+D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.exe
+D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.pdb

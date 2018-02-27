@@ -103,8 +103,6 @@ namespace DeGokkers
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
-
             radiobutton1.Enabled = false;
             radioButton2.Enabled = false;
             radioButton3.Enabled = false;
@@ -149,6 +147,13 @@ namespace DeGokkers
                     pictureBox4.Location = new Point(75, 219);
                     pictureBox5.Location = new Point(75, 273);
                     pictureBox6.Location = new Point(75, 329);
+
+                    radiobutton1.Enabled = true;
+                    radioButton2.Enabled = true;
+                    radioButton3.Enabled = true;
+                    numericUpDown1.Enabled = true;
+                    numericUpDown2.Enabled = true;
+                    button1.Enabled = true;
                 }
                 else if (result == System.Windows.Forms.DialogResult.No)
                 {
@@ -179,6 +184,13 @@ namespace DeGokkers
                     pictureBox4.Location = new Point(75, 219);
                     pictureBox5.Location = new Point(75, 273);
                     pictureBox6.Location = new Point(75, 329);
+
+                    radiobutton1.Enabled = true;
+                    radioButton2.Enabled = true;
+                    radioButton3.Enabled = true;
+                    numericUpDown1.Enabled = true;
+                    numericUpDown2.Enabled = true;
+                    button1.Enabled = true;
                 }
                 else if(result == System.Windows.Forms.DialogResult.No)
                 {
@@ -209,6 +221,13 @@ namespace DeGokkers
                     pictureBox4.Location = new Point(75, 219);
                     pictureBox5.Location = new Point(75, 273);
                     pictureBox6.Location = new Point(75, 329);
+
+                    radiobutton1.Enabled = true;
+                    radioButton2.Enabled = true;
+                    radioButton3.Enabled = true;
+                    numericUpDown1.Enabled = true;
+                    numericUpDown2.Enabled = true;
+                    button1.Enabled = true;
                 }
                 else if (result == System.Windows.Forms.DialogResult.No)
                 {
@@ -239,6 +258,13 @@ namespace DeGokkers
                     pictureBox4.Location = new Point(75, 219);
                     pictureBox5.Location = new Point(75, 273);
                     pictureBox6.Location = new Point(75, 329);
+
+                    radiobutton1.Enabled = true;
+                    radioButton2.Enabled = true;
+                    radioButton3.Enabled = true;
+                    numericUpDown1.Enabled = true;
+                    numericUpDown2.Enabled = true;
+                    button1.Enabled = true;
                 }
                 else if (result == System.Windows.Forms.DialogResult.No)
                 {
@@ -269,6 +295,13 @@ namespace DeGokkers
                     pictureBox4.Location = new Point(75, 219);
                     pictureBox5.Location = new Point(75, 273);
                     pictureBox6.Location = new Point(75, 329);
+
+                    radiobutton1.Enabled = true;
+                    radioButton2.Enabled = true;
+                    radioButton3.Enabled = true;
+                    numericUpDown1.Enabled = true;
+                    numericUpDown2.Enabled = true;
+                    button1.Enabled = true;
                 }
                 else if (result == System.Windows.Forms.DialogResult.No)
                 {
@@ -299,6 +332,13 @@ namespace DeGokkers
                     pictureBox4.Location = new Point(75, 219);
                     pictureBox5.Location = new Point(75, 273);
                     pictureBox6.Location = new Point(75, 329);
+
+                    radiobutton1.Enabled = true;
+                    radioButton2.Enabled = true;
+                    radioButton3.Enabled = true;
+                    numericUpDown1.Enabled = true;
+                    numericUpDown2.Enabled = true;
+                    button1.Enabled = true;
                 }
                 else if (result == System.Windows.Forms.DialogResult.No)
                 {

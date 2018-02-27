@@ -173,6 +173,7 @@ namespace DeGokkers
                 int wed1 = Convert.ToInt32(numericUpDown2.Value);
                 object lbl_wed1 = null;
                 label5.Text = "Speler 1 heeft €" + inzet1 + " op cheetah nummer " + wed1 + " ingezet";
+               
             }
 
             if (radioButton2.Checked)

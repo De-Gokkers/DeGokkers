@@ -28,6 +28,7 @@
         /// </summary>
         public void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.radiobutton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
@@ -118,14 +119,13 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Wed";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(271, 615);
+            this.label1.Location = new System.Drawing.Point(272, 614);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 13);
@@ -190,7 +190,6 @@
             this.label5.TabIndex = 18;
             this.label5.Text = "     Sietse heeft nog niet gewed";
             this.label5.TextChanged += new System.EventHandler(this.label5_TextChanged);
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -259,7 +258,6 @@
             this.pictureBox6.Size = new System.Drawing.Size(76, 48);
             this.pictureBox6.TabIndex = 37;
             this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // pictureBox5
             // 
@@ -270,7 +268,6 @@
             this.pictureBox5.Size = new System.Drawing.Size(76, 48);
             this.pictureBox5.TabIndex = 36;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox4
             // 
@@ -281,7 +278,6 @@
             this.pictureBox4.Size = new System.Drawing.Size(76, 48);
             this.pictureBox4.TabIndex = 35;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox3
             // 
@@ -292,7 +288,6 @@
             this.pictureBox3.Size = new System.Drawing.Size(76, 48);
             this.pictureBox3.TabIndex = 34;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox2
             // 
@@ -303,7 +298,6 @@
             this.pictureBox2.Size = new System.Drawing.Size(76, 48);
             this.pictureBox2.TabIndex = 33;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox1
             // 
@@ -314,7 +308,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(76, 48);
             this.pictureBox1.TabIndex = 32;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // pictureBoxMain
             // 
@@ -403,7 +396,11 @@
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radiobutton1);
+<<<<<<< Updated upstream
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+=======
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+>>>>>>> Stashed changes
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -452,7 +449,13 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+<<<<<<< Updated upstream
         private System.Windows.Forms.Label label11;
     }
 }
 
+=======
+    }
+}
+
+>>>>>>> Stashed changes

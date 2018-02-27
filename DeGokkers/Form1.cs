@@ -107,8 +107,6 @@ namespace DeGokkers
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
-
             radiobutton1.Enabled = false;
             radioButton2.Enabled = false;
             radioButton3.Enabled = false;
@@ -120,11 +118,11 @@ namespace DeGokkers
             while (pictureBox2.Location.X <= 800 && pictureBox3.Location.X <= 800 && pictureBox4.Location.X <= 800 && pictureBox5.Location.X <= 800 && pictureBox1.Location.X <= 800 && pictureBox6.Location.X <= 800)
             {
                 Random rnd = new Random();
+                pictureBox1.Location = new Point(pictureBox1.Location.X + rnd.Next(1, 5), pictureBox1.Location.Y);
                 pictureBox2.Location = new Point(pictureBox2.Location.X + rnd.Next(1, 5), pictureBox2.Location.Y);
                 pictureBox3.Location = new Point(pictureBox3.Location.X + rnd.Next(1, 5), pictureBox3.Location.Y);
                 pictureBox4.Location = new Point(pictureBox4.Location.X + rnd.Next(1, 5), pictureBox4.Location.Y);
                 pictureBox5.Location = new Point(pictureBox5.Location.X + rnd.Next(1, 5), pictureBox5.Location.Y);
-                pictureBox1.Location = new Point(pictureBox1.Location.X + rnd.Next(1, 5), pictureBox1.Location.Y);
                 pictureBox6.Location = new Point(pictureBox6.Location.X + rnd.Next(1, 5), pictureBox6.Location.Y);
 
                 Thread.Sleep(10);
@@ -133,32 +131,224 @@ namespace DeGokkers
 
             if (pictureBox1.Location.X >= 800)
             {
-                MessageBox.Show("Nummer 1 heeft gewonnen.");
+                //MessageBox.Show("Nummer 1 heeft gewonnen.", MessageBoxButtons.YesNo, == DialogResult.Yes);    
+                // Initializes the variables to pass to the MessageBox.Show method.
+
+                string message = "De race is afgelopen, wilt u een nieuwe ronden starten?";
+                string caption = "Error Detected in Input";
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                DialogResult result;
+
+                // Displays the MessageBox.
+
+                result = MessageBox.Show(message, caption, buttons);
+
+                if (result == System.Windows.Forms.DialogResult.Yes)
+                {
+                    pictureBox1.Location = new Point(75, 50);
+                    pictureBox2.Location = new Point(75, 106);
+                    pictureBox3.Location = new Point(75, 161);
+                    pictureBox4.Location = new Point(75, 219);
+                    pictureBox5.Location = new Point(75, 273);
+                    pictureBox6.Location = new Point(75, 329);
+
+                    radiobutton1.Enabled = true;
+                    radioButton2.Enabled = true;
+                    radioButton3.Enabled = true;
+                    numericUpDown1.Enabled = true;
+                    numericUpDown2.Enabled = true;
+                    button1.Enabled = true;
+                }
+                else if (result == System.Windows.Forms.DialogResult.No)
+                {
+                    System.Threading.Thread.Sleep(1000);
+                    this.Close();
+                }
             }
 
             if (pictureBox2.Location.X >= 800)
             {
                 MessageBox.Show("Nummer 2 heeft gewonnen.");
+                // Initializes the variables to pass to the MessageBox.Show method.
+
+                string message = "De race is afgelopen, wilt u een nieuwe ronden starten?";
+                string caption = "Error Detected in Input";
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                DialogResult result;
+
+                // Displays the MessageBox.
+
+                result = MessageBox.Show(message, caption, buttons);
+
+                if (result == System.Windows.Forms.DialogResult.Yes)
+                {
+                    pictureBox1.Location = new Point(75, 50);
+                    pictureBox2.Location = new Point(75, 106);
+                    pictureBox3.Location = new Point(75, 161);
+                    pictureBox4.Location = new Point(75, 219);
+                    pictureBox5.Location = new Point(75, 273);
+                    pictureBox6.Location = new Point(75, 329);
+
+                    radiobutton1.Enabled = true;
+                    radioButton2.Enabled = true;
+                    radioButton3.Enabled = true;
+                    numericUpDown1.Enabled = true;
+                    numericUpDown2.Enabled = true;
+                    button1.Enabled = true;
+                }
+                else if(result == System.Windows.Forms.DialogResult.No)
+                {
+                    System.Threading.Thread.Sleep(1000);
+                    this.Close();
+                }
             }
 
             if (pictureBox3.Location.X >= 800)
             {
                 MessageBox.Show("Nummer 3 heeft gewonnen.");
+                // Initializes the variables to pass to the MessageBox.Show method.
+
+                string message = "De race is afgelopen, wilt u een nieuwe ronden starten?";
+                string caption = "Error Detected in Input";
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                DialogResult result;
+
+                // Displays the MessageBox.
+
+                result = MessageBox.Show(message, caption, buttons);
+
+                if (result == System.Windows.Forms.DialogResult.Yes)
+                {
+                    pictureBox1.Location = new Point(75, 50);
+                    pictureBox2.Location = new Point(75, 106);
+                    pictureBox3.Location = new Point(75, 161);
+                    pictureBox4.Location = new Point(75, 219);
+                    pictureBox5.Location = new Point(75, 273);
+                    pictureBox6.Location = new Point(75, 329);
+
+                    radiobutton1.Enabled = true;
+                    radioButton2.Enabled = true;
+                    radioButton3.Enabled = true;
+                    numericUpDown1.Enabled = true;
+                    numericUpDown2.Enabled = true;
+                    button1.Enabled = true;
+                }
+                else if (result == System.Windows.Forms.DialogResult.No)
+                {
+                    System.Threading.Thread.Sleep(1000);
+                    this.Close();
+                }
             }
 
             if (pictureBox4.Location.X >= 800)
             {
                 MessageBox.Show("Nummer 4 heeft gewonnen.");
+                // Initializes the variables to pass to the MessageBox.Show method.
+
+                string message = "De race is afgelopen, wilt u een nieuwe ronden starten?";
+                string caption = "Error Detected in Input";
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                DialogResult result;
+
+                // Displays the MessageBox.
+
+                result = MessageBox.Show(message, caption, buttons);
+
+                if (result == System.Windows.Forms.DialogResult.Yes)
+                {
+                    pictureBox1.Location = new Point(75, 50);
+                    pictureBox2.Location = new Point(75, 106);
+                    pictureBox3.Location = new Point(75, 161);
+                    pictureBox4.Location = new Point(75, 219);
+                    pictureBox5.Location = new Point(75, 273);
+                    pictureBox6.Location = new Point(75, 329);
+
+                    radiobutton1.Enabled = true;
+                    radioButton2.Enabled = true;
+                    radioButton3.Enabled = true;
+                    numericUpDown1.Enabled = true;
+                    numericUpDown2.Enabled = true;
+                    button1.Enabled = true;
+                }
+                else if (result == System.Windows.Forms.DialogResult.No)
+                {
+                    System.Threading.Thread.Sleep(1000);
+                    this.Close();
+                }
             }
 
             if (pictureBox5.Location.X >= 800)
             {
                 MessageBox.Show("Nummer 5 heeft gewonnen.");
+                // Initializes the variables to pass to the MessageBox.Show method.
+
+                string message = "De race is afgelopen, wilt u een nieuwe ronden starten?";
+                string caption = "Error Detected in Input";
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                DialogResult result;
+
+                // Displays the MessageBox.
+
+                result = MessageBox.Show(message, caption, buttons);
+
+                if (result == System.Windows.Forms.DialogResult.Yes)
+                {
+                    pictureBox1.Location = new Point(75, 50);
+                    pictureBox2.Location = new Point(75, 106);
+                    pictureBox3.Location = new Point(75, 161);
+                    pictureBox4.Location = new Point(75, 219);
+                    pictureBox5.Location = new Point(75, 273);
+                    pictureBox6.Location = new Point(75, 329);
+
+                    radiobutton1.Enabled = true;
+                    radioButton2.Enabled = true;
+                    radioButton3.Enabled = true;
+                    numericUpDown1.Enabled = true;
+                    numericUpDown2.Enabled = true;
+                    button1.Enabled = true;
+                }
+                else if (result == System.Windows.Forms.DialogResult.No)
+                {
+                    System.Threading.Thread.Sleep(1000);
+                    this.Close();
+                }
             }
 
             if (pictureBox6.Location.X >= 800)
             {
                 MessageBox.Show("Nummer 6 heeft gewonnen.");
+                // Initializes the variables to pass to the MessageBox.Show method.
+
+                string message = "De race is afgelopen, wilt u een nieuwe ronden starten?";
+                string caption = "Error Detected in Input";
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                DialogResult result;
+
+                // Displays the MessageBox.
+
+                result = MessageBox.Show(message, caption, buttons);
+
+                if (result == System.Windows.Forms.DialogResult.Yes)
+                {
+                    pictureBox1.Location = new Point(75, 50);
+                    pictureBox2.Location = new Point(75, 106);
+                    pictureBox3.Location = new Point(75, 161);
+                    pictureBox4.Location = new Point(75, 219);
+                    pictureBox5.Location = new Point(75, 273);
+                    pictureBox6.Location = new Point(75, 329);
+
+                    radiobutton1.Enabled = true;
+                    radioButton2.Enabled = true;
+                    radioButton3.Enabled = true;
+                    numericUpDown1.Enabled = true;
+                    numericUpDown2.Enabled = true;
+                    button1.Enabled = true;
+                }
+                else if (result == System.Windows.Forms.DialogResult.No)
+                {
+                    System.Threading.Thread.Sleep(1000);
+                    this.Close();
+                }
             }
 
         }
@@ -177,7 +367,11 @@ namespace DeGokkers
                 int wed1 = Convert.ToInt32(numericUpDown2.Value);
                 object lbl_wed1 = null;
                 label5.Text = "Speler 1 heeft €" + inzet1 + " op cheetah nummer " + wed1 + " ingezet";
+<<<<<<< HEAD
                 label8.Text = "Sietse heeft: € " + Guy.GuyMain.GuyTotalAmount;
+=======
+               
+>>>>>>> master
             }
 
             if (radioButton2.Checked)
@@ -264,12 +458,16 @@ namespace DeGokkers
 
         }
 
+<<<<<<< HEAD
         private void label9_Click(object sender, EventArgs e)
         {
 
         }
 
         private void label10_Click(object sender, EventArgs e)
+=======
+        private void label8_Click(object sender, EventArgs e)
+>>>>>>> master
         {
 
         }

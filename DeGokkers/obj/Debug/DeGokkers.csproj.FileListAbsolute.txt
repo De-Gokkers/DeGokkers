@@ -57,3 +57,13 @@ D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\obj\Debug\D
 D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.csproj.CoreCompileInputs.cache
 D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.exe
 D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.pdb
+C:\Users\Frank van Beek\OneDrive - ROC West-Brabant\Bijlagen\School OneDrive\repo\DeGokkers\bin\Debug\Interop.SHDocVw.dll
+C:\Users\Frank van Beek\OneDrive - ROC West-Brabant\Bijlagen\School OneDrive\repo\DeGokkers\bin\Debug\AxInterop.SHDocVw.dll
+C:\Users\Frank van Beek\OneDrive - ROC West-Brabant\Bijlagen\School OneDrive\repo\DeGokkers\obj\Debug\Interop.SHDocVw.dll
+C:\Users\Frank van Beek\OneDrive - ROC West-Brabant\Bijlagen\School OneDrive\repo\DeGokkers\obj\Debug\AxInterop.SHDocVw.dll
+C:\Users\Frank van Beek\OneDrive - ROC West-Brabant\Bijlagen\School OneDrive\repo\DeGokkers\obj\Debug\DeGokkers.csproj.ResolveComReference.cache
+D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\obj\Debug\Interop.SHDocVw.dll
+D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\obj\Debug\AxInterop.SHDocVw.dll
+D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.csproj.ResolveComReference.cache
+D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\bin\Debug\Interop.SHDocVw.dll
+D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\bin\Debug\AxInterop.SHDocVw.dll

@@ -347,6 +347,7 @@
             this.label9.Size = new System.Drawing.Size(80, 13);
             this.label9.TabIndex = 39;
             this.label9.Text = "Peter heeft: €...";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
@@ -358,6 +359,7 @@
             this.label10.Size = new System.Drawing.Size(70, 13);
             this.label10.TabIndex = 40;
             this.label10.Text = "Fer heeft: €...";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // Form1
             // 

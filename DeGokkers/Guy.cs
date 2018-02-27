@@ -13,7 +13,10 @@ namespace DeGokkers
             public string Name; // De naam van de gokker
             public Bet MyBet; // Een instantie van Bet()
             public int Cash; // Het saldo van de gokker
-                             //Deze twee velden zijn de gokkers GUI controls op het formulier
+
+            public static object GuyTotalAmount { get; internal set; }
+
+            //Deze twee velden zijn de gokkers GUI controls op het formulier
             //public RadioButton MyRadiobutton;
             //public Label MyLabel;
             // test

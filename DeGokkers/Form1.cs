@@ -17,6 +17,10 @@ namespace DeGokkers
         public Form1()
         {
             InitializeComponent();
+
+            pictureBox1.Parent = pictureBoxMain;
+            pictureBox1.BackColor = Color.Transparent;
+            
         }
 
         public void Form1_Load(object sender, EventArgs e)
@@ -173,6 +177,7 @@ namespace DeGokkers
                 int wed1 = Convert.ToInt32(numericUpDown2.Value);
                 object lbl_wed1 = null;
                 label5.Text = "Speler 1 heeft €" + inzet1 + " op cheetah nummer " + wed1 + " ingezet";
+                label8.Text = "Sietse heeft: € " + Guy.GuyMain.GuyTotalAmount;
             }
 
             if (radioButton2.Checked)
@@ -182,6 +187,7 @@ namespace DeGokkers
                 int wed2 = Convert.ToInt32(numericUpDown2.Value);
                 object lbl_wed2 = null;
                 label6.Text = "Speler 2 heeft €" + inzet2 + " op cheetah nummer " + wed2 + " ingezet";
+                this.label9.Text = "Peter heeft: €...";
             }
 
             if (radioButton3.Checked)
@@ -191,7 +197,11 @@ namespace DeGokkers
                 int wed3 = Convert.ToInt32(numericUpDown2.Value);
                 object lbl_wed3 = null;
                 label7.Text = "Speler 3 heeft €" + inzet3 + " op cheetah nummer " + wed3 + " ingezet";
+                this.label10.Text = "Fer heeft: €...";
             }
+
+            
+
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -250,6 +260,16 @@ namespace DeGokkers
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
         {
 
         }

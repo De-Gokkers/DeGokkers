@@ -67,3 +67,8 @@ D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\obj\Debug\A
 D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\obj\Debug\DeGokkers.csproj.ResolveComReference.cache
 D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\bin\Debug\Interop.SHDocVw.dll
 D:\School\School UP2DATE\P3\De Gokkers\DeGokkers\DeGokkers\DeGokkers\bin\Debug\AxInterop.SHDocVw.dll
+C:\Users\MaKe station\source\GitC#Projecten\DeGokkers\DeGokkers\obj\Debug\Interop.SHDocVw.dll
+C:\Users\MaKe station\source\GitC#Projecten\DeGokkers\DeGokkers\obj\Debug\AxInterop.SHDocVw.dll
+C:\Users\MaKe station\source\GitC#Projecten\DeGokkers\DeGokkers\obj\Debug\DeGokkers.csproj.ResolveComReference.cache
+C:\Users\MaKe station\source\GitC#Projecten\DeGokkers\DeGokkers\bin\Debug\Interop.SHDocVw.dll
+C:\Users\MaKe station\source\GitC#Projecten\DeGokkers\DeGokkers\bin\Debug\AxInterop.SHDocVw.dll

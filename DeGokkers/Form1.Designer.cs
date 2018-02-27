@@ -119,6 +119,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Wed";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
             // 
             // label1
@@ -245,9 +246,19 @@
             0,
             0,
             0});
+            this.numericUpDown2.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(120, 20);
             this.numericUpDown2.TabIndex = 22;
+            this.numericUpDown2.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // pictureBox6
             // 
@@ -330,7 +341,6 @@
             this.label8.Size = new System.Drawing.Size(84, 13);
             this.label8.TabIndex = 38;
             this.label8.Text = "Sietse heeft: €...";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label9
             // 
@@ -398,11 +408,8 @@
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radiobutton1);
-
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;

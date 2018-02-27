@@ -367,11 +367,10 @@ namespace DeGokkers
                 int wed1 = Convert.ToInt32(numericUpDown2.Value);
                 object lbl_wed1 = null;
                 label5.Text = "Speler 1 heeft €" + inzet1 + " op cheetah nummer " + wed1 + " ingezet";
-<<<<<<< HEAD
                 label8.Text = "Sietse heeft: € " + Guy.GuyMain.GuyTotalAmount;
-=======
+
                
->>>>>>> master
+
             }
 
             if (radioButton2.Checked)
@@ -458,18 +457,58 @@ namespace DeGokkers
 
         }
 
-<<<<<<< HEAD
         private void label9_Click(object sender, EventArgs e)
         {
 
         }
 
         private void label10_Click(object sender, EventArgs e)
-=======
-        private void label8_Click(object sender, EventArgs e)
->>>>>>> master
         {
 
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            bool radiobutton1_CheckedChanged = true;
+            bool radioButton2_CheckedChanged = true;
+            bool radioButton3_CheckedChanged = true;
+
+            if (radiobutton1.Checked)
+            {
+
+                object nmr_inzet = null;
+                int inzet1 = (int)numericUpDown1.Value;
+                int wed1 = Convert.ToInt32(numericUpDown2.Value);
+                object lbl_wed1 = null;
+                label5.Text = "Speler 1 heeft €" + inzet1 + " op cheetah nummer " + wed1 + " ingezet";
+                //label8.Text = "Sietse heeft: € " + Guy.GuyMain();
+            }
+
+            if (radioButton2.Checked)
+            {
+                object nmr_inzet2 = null;
+                int inzet2 = (int)numericUpDown1.Value;
+                int wed2 = Convert.ToInt32(numericUpDown2.Value);
+                object lbl_wed2 = null;
+                label6.Text = "Speler 2 heeft €" + inzet2 + " op cheetah nummer " + wed2 + " ingezet";
+                //this.label9.Text = "Peter heeft: €. " +;
+            }
+
+            if (radioButton3.Checked)
+            {
+                object nmr_inzet3 = null;
+                int inzet3 = (int)numericUpDown1.Value;
+                int wed3 = Convert.ToInt32(numericUpDown2.Value);
+                object lbl_wed3 = null;
+                label7.Text = "Speler 3 heeft €" + inzet3 + " op cheetah nummer " + wed3 + " ingezet";
+                //this.label10.Text = "Fer heeft: € " +;
+            }
         }
     }
 }

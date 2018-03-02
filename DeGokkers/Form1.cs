@@ -23,6 +23,52 @@ namespace DeGokkers
             
         }
 
+        public void Resetanimals()
+        {
+            string message = "De race is afgelopen, wilt u een nieuwe ronden starten?";
+            string caption = "Error Detected in Input";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result;
+
+            // Displays the MessageBox.
+
+            result = MessageBox.Show(message, caption, buttons);
+
+            if (result == System.Windows.Forms.DialogResult.Yes)
+            {
+                pictureBox1.Location = new Point(75, 50);
+                pictureBox2.Location = new Point(75, 106);
+                pictureBox3.Location = new Point(75, 161);
+                pictureBox4.Location = new Point(75, 219);
+                pictureBox5.Location = new Point(75, 273);
+                pictureBox6.Location = new Point(75, 329);
+
+                radiobutton1.Enabled = true;
+                radioButton2.Enabled = true;
+                radioButton3.Enabled = true;
+                numericUpDown1.Enabled = true;
+                numericUpDown2.Enabled = true;
+                button1.Enabled = true;
+            }
+
+            else if (result == System.Windows.Forms.DialogResult.No)
+            {
+                System.Threading.Thread.Sleep(1000);
+                this.Close();
+            }
+        }
+
+        public void GuyArray()
+        {
+            int numberofplayers = 3;
+            Guy[] playerarray = new Guy[numberofplayers];
+
+            for (int i = 0; i < numberofplayers; i++)
+            {
+                playerarray[i] = new Guy();
+            }
+        }
+
         public void Form1_Load(object sender, EventArgs e)
         {
             
@@ -134,36 +180,7 @@ namespace DeGokkers
                 //MessageBox.Show("Nummer 1 heeft gewonnen.", MessageBoxButtons.YesNo, == DialogResult.Yes);    
                 // Initializes the variables to pass to the MessageBox.Show method.
 
-                string message = "De race is afgelopen, wilt u een nieuwe ronden starten?";
-                string caption = "Error Detected in Input";
-                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-                DialogResult result;
-
-                // Displays the MessageBox.
-
-                result = MessageBox.Show(message, caption, buttons);
-
-                if (result == System.Windows.Forms.DialogResult.Yes)
-                {
-                    pictureBox1.Location = new Point(75, 50);
-                    pictureBox2.Location = new Point(75, 106);
-                    pictureBox3.Location = new Point(75, 161);
-                    pictureBox4.Location = new Point(75, 219);
-                    pictureBox5.Location = new Point(75, 273);
-                    pictureBox6.Location = new Point(75, 329);
-
-                    radiobutton1.Enabled = true;
-                    radioButton2.Enabled = true;
-                    radioButton3.Enabled = true;
-                    numericUpDown1.Enabled = true;
-                    numericUpDown2.Enabled = true;
-                    button1.Enabled = true;
-                }
-                else if (result == System.Windows.Forms.DialogResult.No)
-                {
-                    System.Threading.Thread.Sleep(1000);
-                    this.Close();
-                }
+                Resetanimals();
             }
 
             if (pictureBox2.Location.X >= 800)
@@ -171,36 +188,7 @@ namespace DeGokkers
                 MessageBox.Show("Nummer 2 heeft gewonnen.");
                 // Initializes the variables to pass to the MessageBox.Show method.
 
-                string message = "De race is afgelopen, wilt u een nieuwe ronden starten?";
-                string caption = "Error Detected in Input";
-                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-                DialogResult result;
-
-                // Displays the MessageBox.
-
-                result = MessageBox.Show(message, caption, buttons);
-
-                if (result == System.Windows.Forms.DialogResult.Yes)
-                {
-                    pictureBox1.Location = new Point(75, 50);
-                    pictureBox2.Location = new Point(75, 106);
-                    pictureBox3.Location = new Point(75, 161);
-                    pictureBox4.Location = new Point(75, 219);
-                    pictureBox5.Location = new Point(75, 273);
-                    pictureBox6.Location = new Point(75, 329);
-
-                    radiobutton1.Enabled = true;
-                    radioButton2.Enabled = true;
-                    radioButton3.Enabled = true;
-                    numericUpDown1.Enabled = true;
-                    numericUpDown2.Enabled = true;
-                    button1.Enabled = true;
-                }
-                else if(result == System.Windows.Forms.DialogResult.No)
-                {
-                    System.Threading.Thread.Sleep(1000);
-                    this.Close();
-                }
+                Resetanimals();
             }
 
             if (pictureBox3.Location.X >= 800)
@@ -208,36 +196,7 @@ namespace DeGokkers
                 MessageBox.Show("Nummer 3 heeft gewonnen.");
                 // Initializes the variables to pass to the MessageBox.Show method.
 
-                string message = "De race is afgelopen, wilt u een nieuwe ronden starten?";
-                string caption = "Error Detected in Input";
-                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-                DialogResult result;
-
-                // Displays the MessageBox.
-
-                result = MessageBox.Show(message, caption, buttons);
-
-                if (result == System.Windows.Forms.DialogResult.Yes)
-                {
-                    pictureBox1.Location = new Point(75, 50);
-                    pictureBox2.Location = new Point(75, 106);
-                    pictureBox3.Location = new Point(75, 161);
-                    pictureBox4.Location = new Point(75, 219);
-                    pictureBox5.Location = new Point(75, 273);
-                    pictureBox6.Location = new Point(75, 329);
-
-                    radiobutton1.Enabled = true;
-                    radioButton2.Enabled = true;
-                    radioButton3.Enabled = true;
-                    numericUpDown1.Enabled = true;
-                    numericUpDown2.Enabled = true;
-                    button1.Enabled = true;
-                }
-                else if (result == System.Windows.Forms.DialogResult.No)
-                {
-                    System.Threading.Thread.Sleep(1000);
-                    this.Close();
-                }
+                Resetanimals();
             }
 
             if (pictureBox4.Location.X >= 800)
@@ -246,7 +205,7 @@ namespace DeGokkers
                 // Initializes the variables to pass to the MessageBox.Show method.
 
                 string message = "De race is afgelopen, wilt u een nieuwe ronden starten?";
-                string caption = "Error Detected in Input";
+                string caption = "Error Detected In Input.";
                 MessageBoxButtons buttons = MessageBoxButtons.YesNo;
                 DialogResult result;
 
@@ -282,36 +241,7 @@ namespace DeGokkers
                 MessageBox.Show("Nummer 5 heeft gewonnen.");
                 // Initializes the variables to pass to the MessageBox.Show method.
 
-                string message = "De race is afgelopen, wilt u een nieuwe ronden starten?";
-                string caption = "Error Detected in Input";
-                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-                DialogResult result;
-
-                // Displays the MessageBox.
-
-                result = MessageBox.Show(message, caption, buttons);
-
-                if (result == System.Windows.Forms.DialogResult.Yes)
-                {
-                    pictureBox1.Location = new Point(75, 50);
-                    pictureBox2.Location = new Point(75, 106);
-                    pictureBox3.Location = new Point(75, 161);
-                    pictureBox4.Location = new Point(75, 219);
-                    pictureBox5.Location = new Point(75, 273);
-                    pictureBox6.Location = new Point(75, 329);
-
-                    radiobutton1.Enabled = true;
-                    radioButton2.Enabled = true;
-                    radioButton3.Enabled = true;
-                    numericUpDown1.Enabled = true;
-                    numericUpDown2.Enabled = true;
-                    button1.Enabled = true;
-                }
-                else if (result == System.Windows.Forms.DialogResult.No)
-                {
-                    System.Threading.Thread.Sleep(1000);
-                    this.Close();
-                }
+                Resetanimals();
             }
 
             if (pictureBox6.Location.X >= 800)
@@ -319,36 +249,7 @@ namespace DeGokkers
                 MessageBox.Show("Nummer 6 heeft gewonnen.");
                 // Initializes the variables to pass to the MessageBox.Show method.
 
-                string message = "De race is afgelopen, wilt u een nieuwe ronden starten?";
-                string caption = "Error Detected in Input";
-                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-                DialogResult result;
-
-                // Displays the MessageBox.
-
-                result = MessageBox.Show(message, caption, buttons);
-
-                if (result == System.Windows.Forms.DialogResult.Yes)
-                {
-                    pictureBox1.Location = new Point(75, 50);
-                    pictureBox2.Location = new Point(75, 106);
-                    pictureBox3.Location = new Point(75, 161);
-                    pictureBox4.Location = new Point(75, 219);
-                    pictureBox5.Location = new Point(75, 273);
-                    pictureBox6.Location = new Point(75, 329);
-
-                    radiobutton1.Enabled = true;
-                    radioButton2.Enabled = true;
-                    radioButton3.Enabled = true;
-                    numericUpDown1.Enabled = true;
-                    numericUpDown2.Enabled = true;
-                    button1.Enabled = true;
-                }
-                else if (result == System.Windows.Forms.DialogResult.No)
-                {
-                    System.Threading.Thread.Sleep(1000);
-                    this.Close();
-                }
+                Resetanimals();
             }
 
         }
@@ -367,9 +268,12 @@ namespace DeGokkers
                 int wed1 = Convert.ToInt32(numericUpDown2.Value);
                 object lbl_wed1 = null;
                 label5.Text = "Speler 1 heeft €" + inzet1 + " op cheetah nummer " + wed1 + " ingezet";
-                label8.Text = "Sietse heeft: € " + Guy.GuyMain.GuyTotalAmount;
+                //label8.Text = "Sietse heeft: € " + Guy.GuyArray.playerarray[1]
 
-               
+                //guyArray[1].Totalamount;
+
+
+
 
             }
 

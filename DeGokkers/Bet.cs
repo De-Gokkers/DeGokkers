@@ -35,6 +35,5 @@ namespace DeGokkers
                 //Anders, retourneer het tegengestelde van het gewedde bedrag.
             }*/
         }
-
     }
 }

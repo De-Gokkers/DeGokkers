@@ -45,12 +45,12 @@ namespace DeGokkers
                 //Retourneer een true als de gokker genoeg geld heeft om te wedden.
                 //Onderstaande regel staat er tijdelijk om foutmeldingen te voorkomen.
                 //Haal deze regel later weg.
-                return true;
+            return true;
         }
 
         public void ClearBet()
         {
-                ClearBet();
+            ClearBet();
 
         }
 

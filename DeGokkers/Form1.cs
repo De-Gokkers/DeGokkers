@@ -20,7 +20,8 @@ namespace DeGokkers
 
             pictureBox1.Parent = pictureBoxMain;
             pictureBox1.BackColor = Color.Transparent;
-            
+
+            button2.Enabled = false;
         }
 
         public void Resetanimals()
@@ -156,7 +157,7 @@ namespace DeGokkers
             radiobutton1.Enabled = false;
             radioButton2.Enabled = false;
             radioButton3.Enabled = false;
-
+            
             numericUpDown1.Enabled = false;
             numericUpDown2.Enabled = false;
             button1.Enabled = false;
@@ -272,9 +273,6 @@ namespace DeGokkers
 
                 //guyArray[1].Totalamount;
 
-
-
-
             }
 
             if (radioButton2.Checked)
@@ -379,6 +377,7 @@ namespace DeGokkers
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            button2.Enabled = true;
             bool radiobutton1_CheckedChanged = true;
             bool radioButton2_CheckedChanged = true;
             bool radioButton3_CheckedChanged = true;

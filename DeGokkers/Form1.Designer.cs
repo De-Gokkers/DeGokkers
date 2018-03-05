@@ -77,7 +77,6 @@
             this.radiobutton1.TabStop = true;
             this.radiobutton1.Text = "Sietse";
             this.radiobutton1.UseVisualStyleBackColor = true;
-            this.radiobutton1.CheckedChanged += new System.EventHandler(this.radiobutton1_CheckedChanged);
             this.radiobutton1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.radiobutton1_MouseClick);
             // 
             // radioButton2
@@ -92,7 +91,6 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Peter";
             this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             this.radioButton2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.radioButton2_MouseClick);
             // 
             // radioButton3
@@ -107,7 +105,6 @@
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "fer";
             this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             this.radioButton3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.radioButton3_MouseClick);
             // 
             // button1
@@ -120,7 +117,6 @@
             this.button1.Text = "Wed";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
             // 
             // label1
             // 
@@ -132,7 +128,6 @@
             this.label1.Size = new System.Drawing.Size(106, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "Min $5 max $100000";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -144,7 +139,6 @@
             this.label2.Size = new System.Drawing.Size(24, 13);
             this.label2.TabIndex = 8;
             this.label2.Text = "Op:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button2
             // 
@@ -157,7 +151,6 @@
             this.button2.Text = "Go!";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            this.button2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button2_MouseClick);
             // 
             // label3
             // 
@@ -190,7 +183,6 @@
             this.label5.Size = new System.Drawing.Size(154, 13);
             this.label5.TabIndex = 18;
             this.label5.Text = "     Sietse heeft nog niet gewed";
-            this.label5.TextChanged += new System.EventHandler(this.label5_TextChanged);
             // 
             // label6
             // 
@@ -201,7 +193,6 @@
             this.label6.Size = new System.Drawing.Size(150, 13);
             this.label6.TabIndex = 19;
             this.label6.Text = "     Peter heeft nog niet gewed";
-            this.label6.TextChanged += new System.EventHandler(this.label6_TextChanged);
             // 
             // label7
             // 
@@ -212,8 +203,6 @@
             this.label7.Size = new System.Drawing.Size(140, 13);
             this.label7.TabIndex = 20;
             this.label7.Text = "     Fer heeft nog niet gewed";
-            this.label7.TextChanged += new System.EventHandler(this.label7_TextChanged);
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // numericUpDown1
             // 
@@ -236,7 +225,6 @@
             0,
             0,
             0});
-            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // numericUpDown2
             // 
@@ -352,7 +340,6 @@
             this.label9.Size = new System.Drawing.Size(80, 13);
             this.label9.TabIndex = 39;
             this.label9.Text = "Peter heeft: €...";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
@@ -364,7 +351,6 @@
             this.label10.Size = new System.Drawing.Size(70, 13);
             this.label10.TabIndex = 40;
             this.label10.Text = "Fer heeft: €...";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label11
             // 
@@ -417,7 +403,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DeGokkers";
             this.TransparencyKey = System.Drawing.Color.Purple;
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();

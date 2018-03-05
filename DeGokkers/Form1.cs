@@ -26,6 +26,7 @@ namespace DeGokkers
             pictureBox1.BackColor = Color.Transparent;
 
             button2.Enabled = false;
+            GuyArray();
         }
 
         public void Resetanimals()
@@ -71,11 +72,16 @@ namespace DeGokkers
             {
                 playerarray[i] = new Guy();
             }
+
+            CollectBets(1);
         }
 
-        public void Form1_Load(object sender, EventArgs e)
+        public void CollectBets(int winnerAnimal)
         {
-            
+            for (int i = 0; i < playerarray.Length; i++)
+            {
+                playerarray[i].Collect(winnerAnimal);
+            }
         }
 
         public void radiobutton1_MouseClick(object sender, MouseEventArgs e)
@@ -91,66 +97,6 @@ namespace DeGokkers
         public void radioButton3_MouseClick(object sender, MouseEventArgs e)
         {
             GuyNumber = 3;
-        }
-
-        public void button2_MouseClick(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void button1_MouseClick(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void label5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void domainUpDown1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void domainUpDown2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radiobutton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -294,82 +240,6 @@ namespace DeGokkers
                 label7.Text = "Speler 3 heeft €" + playerarray[3].BetAmount + " op cheetah nummer " + playerarray[3].AnimalBet + " ingezet";
                 label10.Text = "Fer heeft: €" + playerarray[3].TotalAmount;
             }*/
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-
-        {
-
         }
 
         private void button1_Click_1(object sender, EventArgs e)

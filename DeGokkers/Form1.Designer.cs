@@ -189,7 +189,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(154, 13);
             this.label5.TabIndex = 18;
-            this.label5.Text = "     Sietse heeft nog niet gewed";
+            this.label5.Text = "Sietse heeft nog niet gewed";
             this.label5.TextChanged += new System.EventHandler(this.label5_TextChanged);
             // 
             // label6

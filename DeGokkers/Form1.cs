@@ -34,7 +34,7 @@ namespace DeGokkers
         {
             InitializeComponent();
 
-            button2.Enabled = false;
+            GoButton.Enabled = false;
         }
 
         public void Resetanimals()
@@ -48,13 +48,13 @@ namespace DeGokkers
 
             result = MessageBox.Show(message, caption, buttons);
 
-            label5.Text = "Sietse heeft nog niet gewed";
-            label6.Text = "Peter heeft nog niet gewed";
-            label7.Text = "Fer heeft nog niet gewed";
+            Player1Status.Text = "Sietse heeft nog niet gewed";
+            Player2Status.Text = "Peter heeft nog niet gewed";
+            Player3Status.Text = "Fer heeft nog niet gewed";
 
-            label8.Text = "Sietse heeft: €...";
-            label9.Text = "Peter heeft: €...";
-            label10.Text = "fer heeft: €...";
+            Player1Money.Text = "Sietse heeft: €...";
+            Player2Money.Text = "Peter heeft: €...";
+            Player3Money.Text = "fer heeft: €...";
 
             if (result == System.Windows.Forms.DialogResult.Yes)
             {
@@ -65,12 +65,12 @@ namespace DeGokkers
                 pictureBox5.Location = new Point(75, 273);
                 pictureBox6.Location = new Point(75, 329);
 
-                radiobutton1.Enabled = true;
-                radioButton2.Enabled = true;
-                radioButton3.Enabled = true;
-                numericUpDown1.Enabled = true;
-                numericUpDown2.Enabled = true;
-                button1.Enabled = true;
+                Player1.Enabled = true;
+                Player2.Enabled = true;
+                Player3.Enabled = true;
+                MoneyBet.Enabled = true;
+                Animalbet.Enabled = true;
+                BetButton.Enabled = true;
             }
 
             else if (result == System.Windows.Forms.DialogResult.No)
@@ -172,13 +172,13 @@ namespace DeGokkers
 
         private void button2_Click(object sender, EventArgs e)
         {
-            radiobutton1.Enabled = false;
-            radioButton2.Enabled = false;
-            radioButton3.Enabled = false;
+            Player1.Enabled = false;
+            Player2.Enabled = false;
+            Player3.Enabled = false;
             
-            numericUpDown1.Enabled = false;
-            numericUpDown2.Enabled = false;
-            button1.Enabled = false;
+            MoneyBet.Enabled = false;
+            Animalbet.Enabled = false;
+            BetButton.Enabled = false;
 
             int GuyNumber = 1;
             int go = 1;
@@ -193,7 +193,7 @@ namespace DeGokkers
                 pictureBox5.Location = new Point(pictureBox5.Location.X + rnd.Next(1, 5), pictureBox5.Location.Y);
                 pictureBox6.Location = new Point(pictureBox6.Location.X + rnd.Next(1, 5), pictureBox6.Location.Y);
 
-                Thread.Sleep(10);
+                Thread.Sleep(100);
                 this.Refresh();
             }
 
@@ -367,40 +367,40 @@ namespace DeGokkers
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            button2.Enabled = true;
+            GoButton.Enabled = true;
             bool radiobutton1_CheckedChanged = true;
             bool radioButton2_CheckedChanged = true;
             bool radioButton3_CheckedChanged = true;
 
-            if (radiobutton1.Checked)
+            if (Player1.Checked)
             {
-                playerarray[1].BetAmount = (int)numericUpDown1.Value;
-                TotalBet += (int)numericUpDown1.Value;
-                playerarray[1].AnimalBet = Convert.ToInt32(numericUpDown2.Value);
-                label5.Text = "Speler 1 heeft €" + playerarray[1].BetAmount + " op cheetah nummer " + playerarray[1].AnimalBet + " ingezet";
-                label8.Text = "Sietse heeft: € " + playerarray[1].TotalAmount;
+                playerarray[1].BetAmount = (int)MoneyBet.Value;
+                TotalBet += (int)MoneyBet.Value;
+                playerarray[1].AnimalBet = Convert.ToInt32(Animalbet.Value);
+                Player1Status.Text = "Speler 1 heeft €" + playerarray[1].BetAmount + " op cheetah nummer " + playerarray[1].AnimalBet + " ingezet";
+                Player1Money.Text = "Sietse heeft: € " + playerarray[1].TotalAmount;
             }
 
-            if (radioButton2.Checked)
+            if (Player2.Checked)
             {
                 object nmr_BetAmount = null;
-                playerarray[2].BetAmount = (int)numericUpDown1.Value;
-                TotalBet += (int)numericUpDown1.Value;
-                playerarray[2].AnimalBet = Convert.ToInt32(numericUpDown2.Value);
+                playerarray[2].BetAmount = (int)MoneyBet.Value;
+                TotalBet += (int)MoneyBet.Value;
+                playerarray[2].AnimalBet = Convert.ToInt32(Animalbet.Value);
                 object lbl_AnimalBet = null;
-                label6.Text = "Speler 2 heeft €" + playerarray[2].BetAmount + " op cheetah nummer " + playerarray[2].AnimalBet + " ingezet";
-                this.label9.Text = "Peter heeft: €" + playerarray[2].TotalAmount;
+                Player2Status.Text = "Speler 2 heeft €" + playerarray[2].BetAmount + " op cheetah nummer " + playerarray[2].AnimalBet + " ingezet";
+                this.Player2Money.Text = "Peter heeft: €" + playerarray[2].TotalAmount;
             }
 
-            if (radioButton3.Checked)
+            if (Player3.Checked)
             {
                 object nmr_inzet3 = null;
-                playerarray[3].BetAmount = (int)numericUpDown1.Value;
-                TotalBet += (int)numericUpDown1.Value;
-                playerarray[3].AnimalBet = Convert.ToInt32(numericUpDown2.Value);
+                playerarray[3].BetAmount = (int)MoneyBet.Value;
+                TotalBet += (int)MoneyBet.Value;
+                playerarray[3].AnimalBet = Convert.ToInt32(Animalbet.Value);
                 object lbl_wed3 = null;
-                label7.Text = "Speler 3 heeft €" + playerarray[3].BetAmount + " op cheetah nummer " + playerarray[3].AnimalBet + " ingezet";
-                this.label10.Text = "Fer heeft: €" + playerarray[3].TotalAmount;
+                Player3Status.Text = "Speler 3 heeft €" + playerarray[3].BetAmount + " op cheetah nummer " + playerarray[3].AnimalBet + " ingezet";
+                this.Player3Money.Text = "Fer heeft: €" + playerarray[3].TotalAmount;
             }
         }
     }

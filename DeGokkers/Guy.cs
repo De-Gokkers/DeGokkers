@@ -14,9 +14,9 @@ namespace DeGokkers
         public int BetAmount;
         public int AnimalBet;
 
-
         public static object GuyTotalAmount
-        { get; internal set;
+        {
+            get; internal set;
         }
 
         public void GuyMain()
@@ -65,15 +65,19 @@ namespace DeGokkers
                 //(Bijv. “Lidy heeft 43 euro.”)
         }
 
-        /*public bool PlaceBet(int amount, int dog)
+        public bool PlaceBet(int amount, int dog)
         {
-            
+            this.MyBet = new Bet(){
+                Amount = amount,
+                Dog = dog,
+                Bettor = this
+            };
                 //Plaats een nieuwe weddenschap en sla het op in de variabele MyBet.
                 //Retourneer een true als de gokker genoeg geld heeft om te wedden.
                 //Onderstaande regel staat er tijdelijk om foutmeldingen te voorkomen.
                 //Haal deze regel later weg.
             return true;
-        }*/
+        }
 
         public void ClearBet()
         {

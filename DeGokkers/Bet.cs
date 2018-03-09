@@ -8,13 +8,10 @@ namespace DeGokkers
 {
     class Bet
     {
-        public class Betmain
-        {
-            /*public int Amount; //Het bedrag van de weddenschap.
+            public int Amount; //Het bedrag van de weddenschap.
             public int Dog; //Het nummer van de hond waarop weddenschap is afgesloten.
             public Guy Bettor; //De gokker die gewed heeft.
             public string GetDescription()
-            test
             {
                 //Retourneer een string die aangeeft wie de weddenschap heeft gedaan,
                 //voor welk bedrag er is gewed en op welke hond er is gewed.
@@ -22,18 +19,16 @@ namespace DeGokkers
                 //Als het bedrag 0 is, is er geen weddenschap geplaatst.
                 //De string die dan geretourneerd wordt is bijv.
                 //“Sietse heeft geen weddenschap geplaatst.”)
-                if ( ...== 0)
-                {
-
-                }
+                return "";
             }
 
             public int PayOut(int Winner)
-            { 
+            {
                 //De parameter van deze methode is de winnaar van de race.
                 //Als de hond gewonnen heeft, retourneer dan het bedrag dat gewed is
                 //Anders, retourneer het tegengestelde van het gewedde bedrag.
-            }*/
-        }
+
+                return 0;
+            }
     }
 }

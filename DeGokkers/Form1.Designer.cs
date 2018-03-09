@@ -149,12 +149,12 @@
             // GoButton
             // 
             this.GoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GoButton.Location = new System.Drawing.Point(667, 623);
+            this.GoButton.Image = ((System.Drawing.Image)(resources.GetObject("GoButton.Image")));
+            this.GoButton.Location = new System.Drawing.Point(667, 622);
             this.GoButton.Margin = new System.Windows.Forms.Padding(2);
             this.GoButton.Name = "GoButton";
             this.GoButton.Size = new System.Drawing.Size(86, 27);
             this.GoButton.TabIndex = 13;
-            this.GoButton.Text = "Go!";
             this.GoButton.UseVisualStyleBackColor = true;
             this.GoButton.Click += new System.EventHandler(this.button2_Click);
             this.GoButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button2_MouseClick);
@@ -314,7 +314,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::DeGokkers.Properties.Resources.Jachtluipaard;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(75, 50);
+            this.pictureBox1.Location = new System.Drawing.Point(74, 50);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(76, 48);
             this.pictureBox1.TabIndex = 32;
@@ -340,7 +340,7 @@
             this.Player1Money.Name = "Player1Money";
             this.Player1Money.Size = new System.Drawing.Size(84, 13);
             this.Player1Money.TabIndex = 38;
-            this.Player1Money.Text = "Sietse heeft: €...";
+            this.Player1Money.Text = "Sietse heeft: €";
             // 
             // Player2Money
             // 
@@ -351,7 +351,7 @@
             this.Player2Money.Name = "Player2Money";
             this.Player2Money.Size = new System.Drawing.Size(80, 13);
             this.Player2Money.TabIndex = 39;
-            this.Player2Money.Text = "Peter heeft: €...";
+            this.Player2Money.Text = "Peter heeft: €";
             this.Player2Money.Click += new System.EventHandler(this.label9_Click);
             // 
             // Player3Money
@@ -363,7 +363,7 @@
             this.Player3Money.Name = "Player3Money";
             this.Player3Money.Size = new System.Drawing.Size(70, 13);
             this.Player3Money.TabIndex = 40;
-            this.Player3Money.Text = "Fer heeft: €...";
+            this.Player3Money.Text = "Fer heeft: €";
             this.Player3Money.Click += new System.EventHandler(this.label10_Click);
             // 
             // label11

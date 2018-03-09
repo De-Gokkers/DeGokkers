@@ -361,6 +361,11 @@ namespace DeGokkers
             if (Player1.Checked)
             {
                 playerarray[0].BetAmount = (int)MoneyBet.Value;
+                if(playerarray[0].BetAmount >= playerarray[0].TotalAmount)
+                {
+                    playerarray[0].BetAmount = 5;
+                }
+
                 TotalBet += (int)MoneyBet.Value;
                 playerarray[0].AnimalBet = Convert.ToInt32(Animalbet.Value);
                 Player1Status.Text = "Speler 1 heeft €" + playerarray[0].BetAmount + " op cheetah nummer " + playerarray[0].AnimalBet + " ingezet";
@@ -370,6 +375,10 @@ namespace DeGokkers
             if (Player2.Checked)
             {
                 playerarray[1].BetAmount = (int)MoneyBet.Value;
+                if (playerarray[1].BetAmount >= playerarray[1].TotalAmount)
+                {
+                    playerarray[1].BetAmount = 5;
+                }
                 TotalBet += (int)MoneyBet.Value;
                 playerarray[1].AnimalBet = Convert.ToInt32(Animalbet.Value);
                 Player2Status.Text = "Speler 2 heeft €" + playerarray[1].BetAmount + " op cheetah nummer " + playerarray[1].AnimalBet + " ingezet";
@@ -379,6 +388,10 @@ namespace DeGokkers
             if (Player3.Checked)
             {
                 playerarray[2].BetAmount = (int)MoneyBet.Value;
+                if (playerarray[2].BetAmount >= playerarray[2].TotalAmount)
+                {
+                    playerarray[2].BetAmount = 5;
+                }
                 TotalBet += (int)MoneyBet.Value;
                 playerarray[2].AnimalBet = Convert.ToInt32(Animalbet.Value);
                 Player3Status.Text = "Speler 3 heeft €" + playerarray[2].BetAmount + " op cheetah nummer " + playerarray[2].AnimalBet + " ingezet";

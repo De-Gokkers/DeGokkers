@@ -79,6 +79,7 @@
             this.Player1.UseVisualStyleBackColor = true;
             this.Player1.CheckedChanged += new System.EventHandler(this.radiobutton1_CheckedChanged);
             this.Player1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.radiobutton1_MouseClick);
+            this.Player1.Enabled = true;
             // 
             // Player2
             // 
@@ -94,6 +95,7 @@
             this.Player2.UseVisualStyleBackColor = true;
             this.Player2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             this.Player2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.radioButton2_MouseClick);
+            this.Player2.Enabled = true;
             // 
             // Player3
             // 
@@ -109,6 +111,7 @@
             this.Player3.UseVisualStyleBackColor = true;
             this.Player3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             this.Player3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.radioButton3_MouseClick);
+            this.Player3.Enabled = true;
             // 
             // BetButton
             // 

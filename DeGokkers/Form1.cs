@@ -95,6 +95,21 @@ namespace DeGokkers
                     playerarray[i].Collect();
                 }
 
+                if (playerarray[0].TotalAmount == 4)
+                {
+                    Player1.Enabled = false;
+                }
+
+                if (playerarray[1].TotalAmount == 4)
+                {
+                    Player2.Enabled = false;
+                }
+
+                if (playerarray[2].TotalAmount == 4)
+                {
+                    Player3.Enabled = false;
+                }
+
                 Changeplayerstatus();
             }
 
@@ -195,7 +210,7 @@ namespace DeGokkers
             Player1.Enabled = false;
             Player2.Enabled = false;
             Player3.Enabled = false;
-            
+
             MoneyBet.Enabled = false;
             Animalbet.Enabled = false;
             BetButton.Enabled = false;
@@ -271,50 +286,6 @@ namespace DeGokkers
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        { }
-
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
 
@@ -345,11 +316,6 @@ namespace DeGokkers
 
         }
 
-        private void label8_Click(object sender, EventArgs e)
-
-        {
-
-        }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
@@ -361,7 +327,7 @@ namespace DeGokkers
             if (Player1.Checked)
             {
                 playerarray[0].BetAmount = (int)MoneyBet.Value;
-                if(playerarray[0].BetAmount >= playerarray[0].TotalAmount)
+                if(playerarray[0].BetAmount > playerarray[0].TotalAmount)
                 {
                     playerarray[0].BetAmount = 5;
                 }
@@ -375,7 +341,7 @@ namespace DeGokkers
             if (Player2.Checked)
             {
                 playerarray[1].BetAmount = (int)MoneyBet.Value;
-                if (playerarray[1].BetAmount >= playerarray[1].TotalAmount)
+                if (playerarray[1].BetAmount > playerarray[1].TotalAmount)
                 {
                     playerarray[1].BetAmount = 5;
                 }
@@ -388,7 +354,7 @@ namespace DeGokkers
             if (Player3.Checked)
             {
                 playerarray[2].BetAmount = (int)MoneyBet.Value;
-                if (playerarray[2].BetAmount >= playerarray[2].TotalAmount)
+                if (playerarray[2].BetAmount > playerarray[2].TotalAmount)
                 {
                     playerarray[2].BetAmount = 5;
                 }

@@ -85,7 +85,7 @@ namespace DeGokkers
                 Animalbet.Enabled = true;
                 BetButton.Enabled = true;
 
-                for(int i = 0; i < playerarray.Length; i++)
+                for (int i = 0; i < playerarray.Length; i++)
                 {
                     playerarray[i].NumberOfBets();
                 }
@@ -111,6 +111,7 @@ namespace DeGokkers
                 }
 
                 Changeplayerstatus();
+                TotalBet = 0;
             }
 
             else if (result == System.Windows.Forms.DialogResult.No)
@@ -118,11 +119,6 @@ namespace DeGokkers
                 System.Threading.Thread.Sleep(1000);
                 this.Close();
             }
-        }
-
-        public void GuyArray()
-        {
-            
         }
 
         public void Form1_Load(object sender, EventArgs e)
@@ -166,16 +162,6 @@ namespace DeGokkers
         }
 
         private void label7_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void domainUpDown1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void domainUpDown2_Click(object sender, EventArgs e)
         {
 
         }
@@ -329,7 +315,7 @@ namespace DeGokkers
                 playerarray[0].BetAmount = (int)MoneyBet.Value;
                 if(playerarray[0].BetAmount > playerarray[0].TotalAmount)
                 {
-                    playerarray[0].BetAmount = 5;
+                    playerarray[0].BetAmount = playerarray[0].TotalAmount;
                 }
 
                 TotalBet += (int)MoneyBet.Value;
@@ -343,7 +329,7 @@ namespace DeGokkers
                 playerarray[1].BetAmount = (int)MoneyBet.Value;
                 if (playerarray[1].BetAmount > playerarray[1].TotalAmount)
                 {
-                    playerarray[1].BetAmount = 5;
+                    playerarray[1].BetAmount = playerarray[1].TotalAmount;
                 }
                 TotalBet += (int)MoneyBet.Value;
                 playerarray[1].AnimalBet = Convert.ToInt32(Animalbet.Value);
@@ -356,7 +342,7 @@ namespace DeGokkers
                 playerarray[2].BetAmount = (int)MoneyBet.Value;
                 if (playerarray[2].BetAmount > playerarray[2].TotalAmount)
                 {
-                    playerarray[2].BetAmount = 5;
+                    playerarray[2].BetAmount = playerarray[2].TotalAmount;
                 }
                 TotalBet += (int)MoneyBet.Value;
                 playerarray[2].AnimalBet = Convert.ToInt32(Animalbet.Value);

@@ -13,6 +13,7 @@ namespace DeGokkers
         public int TotalAmount = 100;
         public int BetAmount;
         public int AnimalBet;
+        public int TotalBet;
 
         public static object GuyTotalAmount
         {
@@ -93,27 +94,45 @@ namespace DeGokkers
                 switch (Form1.AnimalWinner)
                 {
                     case 1:
-                        Form1.TotalBet /= Form1.AmountBedsnr1;
+                        TotalAmount -= BetAmount;
+                        this.TotalBet = Form1.TotalBet;
+                        this.TotalBet /= Form1.AmountBedsnr1;
+                        TotalAmount += TotalBet;
                         break;
 
                     case 2:
-                        Form1.TotalBet /= Form1.AmountBedsnr2;
+                        TotalAmount -= BetAmount;
+                        this.TotalBet = Form1.TotalBet;
+                        this.TotalBet /= Form1.AmountBedsnr2;
+                        TotalAmount += TotalBet;
                         break;
 
                     case 3:
-                        Form1.TotalBet /= Form1.AmountBedsnr3;
+                        TotalAmount -= BetAmount;
+                        this.TotalBet = Form1.TotalBet;
+                        this.TotalBet /= Form1.AmountBedsnr3;
+                        TotalAmount += TotalBet;
                         break;
 
                     case 4:
-                        Form1.TotalBet /= Form1.AmountBedsnr4;
+                        TotalAmount -= BetAmount;
+                        this.TotalBet = Form1.TotalBet;
+                        this.TotalBet /= Form1.AmountBedsnr4;
+                        TotalAmount += TotalBet;
                         break;
 
                     case 5:
-                        Form1.TotalBet /= Form1.AmountBedsnr5;
+                        TotalAmount -= BetAmount;
+                        this.TotalBet = Form1.TotalBet;
+                        this.TotalBet /= Form1.AmountBedsnr5;
+                        TotalAmount += TotalBet;
                         break;
 
                     case 6:
-                        Form1.TotalBet /= Form1.AmountBedsnr6;
+                        TotalAmount -= BetAmount;
+                        this.TotalBet = Form1.TotalBet;
+                        this.TotalBet /= Form1.AmountBedsnr6;
+                        TotalAmount += TotalBet;
                         break;
 
                 }

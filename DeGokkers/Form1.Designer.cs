@@ -79,7 +79,6 @@
             this.Player1.UseVisualStyleBackColor = true;
             this.Player1.CheckedChanged += new System.EventHandler(this.radiobutton1_CheckedChanged);
             this.Player1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.radiobutton1_MouseClick);
-            this.Player1.Enabled = true;
             // 
             // Player2
             // 
@@ -95,7 +94,6 @@
             this.Player2.UseVisualStyleBackColor = true;
             this.Player2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             this.Player2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.radioButton2_MouseClick);
-            this.Player2.Enabled = true;
             // 
             // Player3
             // 
@@ -111,7 +109,6 @@
             this.Player3.UseVisualStyleBackColor = true;
             this.Player3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             this.Player3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.radioButton3_MouseClick);
-            this.Player3.Enabled = true;
             // 
             // BetButton
             // 
@@ -122,7 +119,7 @@
             this.BetButton.TabIndex = 4;
             this.BetButton.Text = "Wed";
             this.BetButton.UseVisualStyleBackColor = true;
-            this.BetButton.Click += new System.EventHandler(this.button1_Click_1);
+            this.BetButton.Click += new System.EventHandler(this.button1_Click);
             this.BetButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
             // 
             // label1
@@ -341,7 +338,7 @@
             this.Player1Money.Location = new System.Drawing.Point(272, 540);
             this.Player1Money.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Player1Money.Name = "Player1Money";
-            this.Player1Money.Size = new System.Drawing.Size(84, 13);
+            this.Player1Money.Size = new System.Drawing.Size(75, 13);
             this.Player1Money.TabIndex = 38;
             this.Player1Money.Text = "Sietse heeft: €";
             // 
@@ -352,7 +349,7 @@
             this.Player2Money.Location = new System.Drawing.Point(272, 563);
             this.Player2Money.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Player2Money.Name = "Player2Money";
-            this.Player2Money.Size = new System.Drawing.Size(80, 13);
+            this.Player2Money.Size = new System.Drawing.Size(71, 13);
             this.Player2Money.TabIndex = 39;
             this.Player2Money.Text = "Peter heeft: €";
             this.Player2Money.Click += new System.EventHandler(this.label9_Click);
@@ -364,7 +361,7 @@
             this.Player3Money.Location = new System.Drawing.Point(271, 584);
             this.Player3Money.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Player3Money.Name = "Player3Money";
-            this.Player3Money.Size = new System.Drawing.Size(70, 13);
+            this.Player3Money.Size = new System.Drawing.Size(61, 13);
             this.Player3Money.TabIndex = 40;
             this.Player3Money.Text = "Fer heeft: €";
             this.Player3Money.Click += new System.EventHandler(this.label10_Click);

@@ -35,16 +35,22 @@ namespace DeGokkers
         {
             InitializeComponent();
 
-            GoButton.Enabled = true;
+            //hier word de go knop uitgeschakeld zodat de wedstrijd niet kan beginnen zonder dat er gegokt is
+            GoButton.Enabled = false;
 
+
+            //hier worden 3 speler aangemaakt
             playerarray = new Guy[3];
             playerarray[0] = new Guy();
             playerarray[1] = new Guy();
             playerarray[2] = new Guy();
 
+            //hierdoor word het totale geldbedrag van elke gokker weergegeven
             Changeplayerstatus();
         }
 
+
+        //deze methode zorgt er voor dat het totale geldbedrag van elke gokker weergegeven
         public void Changeplayerstatus()
         {
             Player1Money.Text = "Sietse heeft: €" + playerarray[0].TotalAmount;
@@ -52,6 +58,16 @@ namespace DeGokkers
             Player3Money.Text = "fer heeft: €" + playerarray[2].TotalAmount;
         }
 
+        //deze methode zorgt ervoor dat alle dieren op hun start posities terug worden gezet als de race geeindigd is, 
+        //een popup komt dat de race is afgelopen,
+        //de gok statussen worden terug gezet naar niet gewed
+        //ook word er hie gecheckt of de gene die ingezet hebben hebben gewonnen of niet
+        //de radiobuttons van de gokker worden op niet klikbaar gezet als de gokker minder dan 5 euro heeft
+        //het geldbedrag word geüpdate van elke gokker
+        //het totale ingezette gok bedrag word terug gezet op 0
+        //het wed bedrag word na de wedstrijd van elke gokker op 0 terug gezet
+        //en als de speler van dit programme besluit om niet verder te spelen en dus als de message box verschijnt en er op no word gedrukt
+        //dat het programme afsluit
         public void Resetanimals()
         {
             string message = "De race is afgelopen, wilt u een nieuwe ronden starten?";
@@ -60,7 +76,6 @@ namespace DeGokkers
             DialogResult result;
 
             // Displays the MessageBox.
-
             result = MessageBox.Show(message, caption, buttons);
 
             Player1Status.Text = "Sietse heeft nog niet gewed";
@@ -69,6 +84,7 @@ namespace DeGokkers
 
             Changeplayerstatus();
 
+            //deze if statement zorgt ervoor dat alle dieren op hun start posities terug worden gezet als de race geeindigd is, 
             if (result == System.Windows.Forms.DialogResult.Yes)
             {
                 pictureBox1.Location = new Point(75, 50);
@@ -95,23 +111,28 @@ namespace DeGokkers
                     playerarray[i].Collect();
                 }
 
-                if (playerarray[0].TotalAmount == 4)
+                if (playerarray[0].TotalAmount <= 4)
                 {
                     Player1.Enabled = false;
                 }
 
-                if (playerarray[1].TotalAmount == 4)
+                if (playerarray[1].TotalAmount <= 4)
                 {
                     Player2.Enabled = false;
                 }
 
-                if (playerarray[2].TotalAmount == 4)
+                if (playerarray[2].TotalAmount <= 4)
                 {
                     Player3.Enabled = false;
                 }
 
                 Changeplayerstatus();
                 TotalBet = 0;
+
+                for (int i = 0; i < playerarray.Length; i++)
+                {
+                    playerarray[i].BetAmount = 0;
+                }
             }
 
             else if (result == System.Windows.Forms.DialogResult.No)
@@ -126,6 +147,7 @@ namespace DeGokkers
             
         }
 
+        //in de onderstaande 3 methodes word bijgehouden op welke speler is gedukt om mee te gokken
         public void radiobutton1_MouseClick(object sender, MouseEventArgs e)
         {
             GuyNumber = 1;
@@ -140,6 +162,7 @@ namespace DeGokkers
         {
             GuyNumber = 3;
         }
+
 
         public void button2_MouseClick(object sender, MouseEventArgs e)
         {
@@ -191,6 +214,14 @@ namespace DeGokkers
 
         }
 
+
+        //in deze methode:
+        //worden de radiiobuttons van elke speler op niet klikbaar gezet
+        //even als het vakje waar je het gewenste geld bedrag dat je wilt wedden en het vakje van het gewenste wed dier nummer kan invoeren
+        //dat de dieren radom tussen 1 en 5 pixels gaan bewegen als er op go word gedrukt
+        //dat de wedstrijd tussen de 20 en 30 seconden duurt
+        //en er een message box word weergegeven van het die dat heeft gewonnen
+        //en dat alle dieren worden terug gezet
         private void button2_Click(object sender, EventArgs e)
         {
             Player1.Enabled = false;
@@ -222,8 +253,6 @@ namespace DeGokkers
             if (pictureBox1.Location.X >= 800)
             {
                 MessageBox.Show("Nummer 1 heeft gewonnen.");
-                //MessageBox.Show("Nummer 1 heeft gewonnen.", MessageBoxButtons.YesNo, == DialogResult.Yes);    
-                // Initializes the variables to pass to the MessageBox.Show method.
                 AnimalWinner = 1;
                 Resetanimals();
             }
@@ -231,7 +260,6 @@ namespace DeGokkers
             if (pictureBox2.Location.X >= 800)
             {
                 MessageBox.Show("Nummer 2 heeft gewonnen.");
-                // Initializes the variables to pass to the MessageBox.Show method.
                 AnimalWinner = 2;
                 Resetanimals();
             }
@@ -239,7 +267,6 @@ namespace DeGokkers
             if (pictureBox3.Location.X >= 800)
             {
                 MessageBox.Show("Nummer 3 heeft gewonnen.");
-                // Initializes the variables to pass to the MessageBox.Show method.
                 AnimalWinner = 3;
                 Resetanimals();
             }
@@ -247,7 +274,6 @@ namespace DeGokkers
             if (pictureBox4.Location.X >= 800)
             {
                 MessageBox.Show("Nummer 4 heeft gewonnen.");
-                // Initializes the variables to pass to the MessageBox.Show method.
                 AnimalWinner = 4;
                 Resetanimals();
             }
@@ -255,7 +281,6 @@ namespace DeGokkers
             if (pictureBox5.Location.X >= 800)
             {
                 MessageBox.Show("Nummer 5 heeft gewonnen.");
-                // Initializes the variables to pass to the MessageBox.Show method.
                 AnimalWinner = 5;
 
                 Resetanimals();
@@ -264,7 +289,6 @@ namespace DeGokkers
             if (pictureBox6.Location.X >= 800)
             {
                 MessageBox.Show("Nummer 6 heeft gewonnen.");
-                // Initializes the variables to pass to the MessageBox.Show method.
                 AnimalWinner = 6;
 
                 Resetanimals();
@@ -302,10 +326,18 @@ namespace DeGokkers
 
         }
 
-
-        private void button1_Click_1(object sender, EventArgs e)
+        //in deze method:
+        //word gekeken met welke speler jij op hebt geklikt om vervolgens mee te wedden
+        //en als je dan iets invult bij het bedrag en dier nummer (wat standaard al is)dan worden de gok statussen van de speler veranderd
+        //naar het bedrag dat die gene gokt en op welk nummer
+        //word ook het gok bedrag op geslageneven als op welk nummer dat de speler gokt
+        //en mocht de speler meer willen hebben dan dat die heeft word het wed bedrag gezet naar het maximale aantal geld dat de speler heeft
+        //ps en ik heb al het commentaar erbij gezet met hoofdpijn #luke #dab
+        private void button1_Click(object sender, EventArgs e)
         {
             GoButton.Enabled = true;
+
+            //geen idee wat deze drie booleans doen maar ik ben bang om ze weg te halen
             bool radiobutton1_CheckedChanged = true;
             bool radioButton2_CheckedChanged = true;
             bool radioButton3_CheckedChanged = true;
@@ -313,14 +345,14 @@ namespace DeGokkers
             if (Player1.Checked)
             {
                 playerarray[0].BetAmount = (int)MoneyBet.Value;
-                if(playerarray[0].BetAmount > playerarray[0].TotalAmount)
+                if (playerarray[0].BetAmount > playerarray[0].TotalAmount)
                 {
                     playerarray[0].BetAmount = playerarray[0].TotalAmount;
                 }
 
                 TotalBet += (int)MoneyBet.Value;
                 playerarray[0].AnimalBet = Convert.ToInt32(Animalbet.Value);
-                Player1Status.Text = "Speler 1 heeft €" + playerarray[0].BetAmount + " op cheetah nummer " + playerarray[0].AnimalBet + " ingezet";
+                Player1Status.Text = "Sietse heeft €" + playerarray[0].BetAmount + " op cheetah nummer " + playerarray[0].AnimalBet + " ingezet";
                 Player1Money.Text = "Sietse heeft: €" + playerarray[0].TotalAmount;
             }
 
@@ -333,7 +365,7 @@ namespace DeGokkers
                 }
                 TotalBet += (int)MoneyBet.Value;
                 playerarray[1].AnimalBet = Convert.ToInt32(Animalbet.Value);
-                Player2Status.Text = "Speler 2 heeft €" + playerarray[1].BetAmount + " op cheetah nummer " + playerarray[1].AnimalBet + " ingezet";
+                Player2Status.Text = "Peter heeft €" + playerarray[1].BetAmount + " op cheetah nummer " + playerarray[1].AnimalBet + " ingezet";
                 this.Player2Money.Text = "Peter heeft: €" + playerarray[1].TotalAmount;
             }
 
@@ -346,7 +378,7 @@ namespace DeGokkers
                 }
                 TotalBet += (int)MoneyBet.Value;
                 playerarray[2].AnimalBet = Convert.ToInt32(Animalbet.Value);
-                Player3Status.Text = "Speler 3 heeft €" + playerarray[2].BetAmount + " op cheetah nummer " + playerarray[2].AnimalBet + " ingezet";
+                Player3Status.Text = "Fer heeft €" + playerarray[2].BetAmount + " op cheetah nummer " + playerarray[2].AnimalBet + " ingezet";
                 this.Player3Money.Text = "Fer heeft: €" + playerarray[2].TotalAmount;
             }
         }

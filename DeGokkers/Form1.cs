@@ -53,9 +53,9 @@ namespace DeGokkers
         //deze methode zorgt er voor dat het totale geldbedrag van elke gokker weergegeven
         public void Changeplayerstatus()
         {
-            Player1Money.Text = "Sietse heeft: €" + playerarray[0].TotalAmount;
-            Player2Money.Text = "Peter heeft: €" + playerarray[1].TotalAmount;
-            Player3Money.Text = "fer heeft: €" + playerarray[2].TotalAmount;
+            Player1Money.Text = "Sietse has: €" + playerarray[0].TotalAmount;
+            Player2Money.Text = "Peter has: €" + playerarray[1].TotalAmount;
+            Player3Money.Text = "Fer has: €" + playerarray[2].TotalAmount;
         }
 
         //deze methode zorgt ervoor dat alle dieren op hun start posities terug worden gezet als de race geeindigd is, 
@@ -70,7 +70,7 @@ namespace DeGokkers
         //dat het programme afsluit
         public void Resetanimals()
         {
-            string message = "De race is afgelopen, wilt u een nieuwe ronden starten?";
+            string message = "The race has ended, do you want to start another round?";
             string caption = "Error Detected in Input";
             MessageBoxButtons buttons = MessageBoxButtons.YesNo;
             DialogResult result;
@@ -78,9 +78,9 @@ namespace DeGokkers
             // Displays the MessageBox.
             result = MessageBox.Show(message, caption, buttons);
 
-            Player1Status.Text = "Sietse heeft nog niet gewed";
-            Player2Status.Text = "Peter heeft nog niet gewed";
-            Player3Status.Text = "Fer heeft nog niet gewed";
+            Player1Status.Text = "Sietse hasn't placed a bet yet.";
+            Player2Status.Text = "Peter hasn't placed a bet yet.";
+            Player3Status.Text = "Fer hasn't placed a bet yet.";
 
             Changeplayerstatus();
 
@@ -235,6 +235,8 @@ namespace DeGokkers
             int GuyNumber = 1;
             int go = 1;
 
+            label5.Text = "Total bet = " + TotalBet;
+
             while (pictureBox2.Location.X <= 800 && pictureBox3.Location.X <= 800 && pictureBox4.Location.X <= 800 && pictureBox5.Location.X <= 800 && pictureBox1.Location.X <= 800 && pictureBox6.Location.X <= 800)
             {
                 Random rnd = new Random();
@@ -252,35 +254,35 @@ namespace DeGokkers
 
             if (pictureBox1.Location.X >= 800)
             {
-                MessageBox.Show("Nummer 1 heeft gewonnen.");
+                MessageBox.Show("Number 1 has won.");
                 AnimalWinner = 1;
                 Resetanimals();
             }
 
             if (pictureBox2.Location.X >= 800)
             {
-                MessageBox.Show("Nummer 2 heeft gewonnen.");
+                MessageBox.Show("Number 2 has won.");
                 AnimalWinner = 2;
                 Resetanimals();
             }
 
             if (pictureBox3.Location.X >= 800)
             {
-                MessageBox.Show("Nummer 3 heeft gewonnen.");
+                MessageBox.Show("Number 3 has won.");
                 AnimalWinner = 3;
                 Resetanimals();
             }
 
             if (pictureBox4.Location.X >= 800)
             {
-                MessageBox.Show("Nummer 4 heeft gewonnen.");
+                MessageBox.Show("Number 4 has won.");
                 AnimalWinner = 4;
                 Resetanimals();
             }
 
             if (pictureBox5.Location.X >= 800)
             {
-                MessageBox.Show("Nummer 5 heeft gewonnen.");
+                MessageBox.Show("Number 5 has won.");
                 AnimalWinner = 5;
 
                 Resetanimals();
@@ -288,7 +290,7 @@ namespace DeGokkers
 
             if (pictureBox6.Location.X >= 800)
             {
-                MessageBox.Show("Nummer 6 heeft gewonnen.");
+                MessageBox.Show("Number 6 has won.");
                 AnimalWinner = 6;
 
                 Resetanimals();
@@ -352,8 +354,8 @@ namespace DeGokkers
 
                 TotalBet += (int)MoneyBet.Value;
                 playerarray[0].AnimalBet = Convert.ToInt32(Animalbet.Value);
-                Player1Status.Text = "Sietse heeft €" + playerarray[0].BetAmount + " op cheetah nummer " + playerarray[0].AnimalBet + " ingezet";
-                Player1Money.Text = "Sietse heeft: €" + playerarray[0].TotalAmount;
+                Player1Status.Text = "Sietse has placed €" + playerarray[0].BetAmount + " on cheetah number " + playerarray[0].AnimalBet;
+                Player1Money.Text = "Sietse has: €" + playerarray[0].TotalAmount;
             }
 
             if (Player2.Checked)
@@ -365,8 +367,8 @@ namespace DeGokkers
                 }
                 TotalBet += (int)MoneyBet.Value;
                 playerarray[1].AnimalBet = Convert.ToInt32(Animalbet.Value);
-                Player2Status.Text = "Peter heeft €" + playerarray[1].BetAmount + " op cheetah nummer " + playerarray[1].AnimalBet + " ingezet";
-                this.Player2Money.Text = "Peter heeft: €" + playerarray[1].TotalAmount;
+                Player2Status.Text = "Peter has placed €" + playerarray[1].BetAmount + " on cheetah number " + playerarray[1].AnimalBet;
+                this.Player2Money.Text = "Peter has: €" + playerarray[1].TotalAmount;
             }
 
             if (Player3.Checked)
@@ -378,9 +380,14 @@ namespace DeGokkers
                 }
                 TotalBet += (int)MoneyBet.Value;
                 playerarray[2].AnimalBet = Convert.ToInt32(Animalbet.Value);
-                Player3Status.Text = "Fer heeft €" + playerarray[2].BetAmount + " op cheetah nummer " + playerarray[2].AnimalBet + " ingezet";
-                this.Player3Money.Text = "Fer heeft: €" + playerarray[2].TotalAmount;
+                Player3Status.Text = "Fer has placed €" + playerarray[2].BetAmount + " on cheetah number " + playerarray[2].AnimalBet;
+                this.Player3Money.Text = "Fer has: €" + playerarray[2].TotalAmount;
             }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

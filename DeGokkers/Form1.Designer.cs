@@ -54,6 +54,7 @@
             this.Player2Money = new System.Windows.Forms.Label();
             this.Player3Money = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MoneyBet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Animalbet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -166,52 +167,52 @@
             this.label3.Location = new System.Drawing.Point(209, 498);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 25);
+            this.label3.Size = new System.Drawing.Size(153, 25);
             this.label3.TabIndex = 14;
-            this.label3.Text = "Wedbureau";
+            this.label3.Text = "betting agency";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(614, 503);
+            this.label4.Location = new System.Drawing.Point(663, 502);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(139, 20);
+            this.label4.Size = new System.Drawing.Size(60, 20);
             this.label4.TabIndex = 15;
-            this.label4.Text = "Weddenschappen";
+            this.label4.Text = "Betting";
             // 
             // Player1Status
             // 
             this.Player1Status.AutoSize = true;
-            this.Player1Status.Location = new System.Drawing.Point(599, 540);
+            this.Player1Status.Location = new System.Drawing.Point(615, 540);
             this.Player1Status.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Player1Status.Name = "Player1Status";
-            this.Player1Status.Size = new System.Drawing.Size(139, 13);
+            this.Player1Status.Size = new System.Drawing.Size(146, 13);
             this.Player1Status.TabIndex = 18;
-            this.Player1Status.Text = "Sietse heeft nog niet gewed";
+            this.Player1Status.Text = "Sietse hasn\'t placed a bet yet";
             this.Player1Status.TextChanged += new System.EventHandler(this.label5_TextChanged);
             // 
             // Player2Status
             // 
             this.Player2Status.AutoSize = true;
-            this.Player2Status.Location = new System.Drawing.Point(603, 561);
+            this.Player2Status.Location = new System.Drawing.Point(619, 561);
             this.Player2Status.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Player2Status.Name = "Player2Status";
-            this.Player2Status.Size = new System.Drawing.Size(150, 13);
+            this.Player2Status.Size = new System.Drawing.Size(142, 13);
             this.Player2Status.TabIndex = 19;
-            this.Player2Status.Text = "     Peter heeft nog niet gewed";
+            this.Player2Status.Text = "Peter hasn\'t placed a bet yet";
             this.Player2Status.TextChanged += new System.EventHandler(this.label6_TextChanged);
             // 
             // Player3Status
             // 
             this.Player3Status.AutoSize = true;
-            this.Player3Status.Location = new System.Drawing.Point(613, 582);
+            this.Player3Status.Location = new System.Drawing.Point(629, 582);
             this.Player3Status.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Player3Status.Name = "Player3Status";
-            this.Player3Status.Size = new System.Drawing.Size(140, 13);
+            this.Player3Status.Size = new System.Drawing.Size(132, 13);
             this.Player3Status.TabIndex = 20;
-            this.Player3Status.Text = "     Fer heeft nog niet gewed";
+            this.Player3Status.Text = "Fer hasn\'t placed a bet yet";
             this.Player3Status.TextChanged += new System.EventHandler(this.label7_TextChanged);
             this.Player3Status.Click += new System.EventHandler(this.label7_Click);
             // 
@@ -338,9 +339,9 @@
             this.Player1Money.Location = new System.Drawing.Point(272, 540);
             this.Player1Money.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Player1Money.Name = "Player1Money";
-            this.Player1Money.Size = new System.Drawing.Size(75, 13);
+            this.Player1Money.Size = new System.Drawing.Size(68, 13);
             this.Player1Money.TabIndex = 38;
-            this.Player1Money.Text = "Sietse heeft: €";
+            this.Player1Money.Text = "Sietse has: €";
             // 
             // Player2Money
             // 
@@ -349,9 +350,9 @@
             this.Player2Money.Location = new System.Drawing.Point(272, 563);
             this.Player2Money.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Player2Money.Name = "Player2Money";
-            this.Player2Money.Size = new System.Drawing.Size(71, 13);
+            this.Player2Money.Size = new System.Drawing.Size(64, 13);
             this.Player2Money.TabIndex = 39;
-            this.Player2Money.Text = "Peter heeft: €";
+            this.Player2Money.Text = "Peter has: €";
             this.Player2Money.Click += new System.EventHandler(this.label9_Click);
             // 
             // Player3Money
@@ -361,9 +362,9 @@
             this.Player3Money.Location = new System.Drawing.Point(271, 584);
             this.Player3Money.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Player3Money.Name = "Player3Money";
-            this.Player3Money.Size = new System.Drawing.Size(61, 13);
+            this.Player3Money.Size = new System.Drawing.Size(54, 13);
             this.Player3Money.TabIndex = 40;
-            this.Player3Money.Text = "Fer heeft: €";
+            this.Player3Money.Text = "Fer has: €";
             this.Player3Money.Click += new System.EventHandler(this.label10_Click);
             // 
             // label11
@@ -373,9 +374,19 @@
             this.label11.Location = new System.Drawing.Point(426, 615);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(79, 13);
+            this.label11.Size = new System.Drawing.Size(77, 13);
             this.label11.TabIndex = 41;
-            this.label11.Text = "Cheetah 1 tm 6";
+            this.label11.Text = "Cheetah 1 to 6";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(216, 664);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 13);
+            this.label5.TabIndex = 42;
+            this.label5.Text = "Total bet:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // Form1
             // 
@@ -383,6 +394,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(962, 720);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.Player3Money);
             this.Controls.Add(this.Player2Money);
@@ -460,6 +472,7 @@
         private System.Windows.Forms.Label Player3Money;
 
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label5;
     }
 }
 

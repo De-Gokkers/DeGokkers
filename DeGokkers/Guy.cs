@@ -10,7 +10,7 @@ namespace DeGokkers
     {
         public string Name; // De naam van de gokker
         public Bet MyBet; // Een instantie van Bet()
-        public int TotalAmount = 100;
+        public int TotalAmount;
         public int BetAmount;
         public int AnimalBet;
         public int TotalBet;
@@ -64,22 +64,6 @@ namespace DeGokkers
                 //Verander mijn label in de omschrijving van mijn weddenschap.
                 //Verander de label op mijn radioknop zodat deze mijn saldo laat zien.
                 //(Bijv. “Lidy heeft 43 euro.”)
-        }
-
-        public bool PlaceBet(int amount, int dog)
-        {
-            this.MyBet = new Bet(){
-                Amount = amount,
-                Dog = dog,
-                Bettor = this
-            };
-            return true;
-        }
-
-        public void ClearBet()
-        {
-            ClearBet();
-
         }
 
         public void Collect()
@@ -141,11 +125,6 @@ namespace DeGokkers
             //Betaal mijn weddenschap uit.
             //Maak mijn weddenschap leeg.
             //Werk mijn labels bij.
-        }
-
-        public void guys()
-        {
-            //this.TotalAmount;
         }
     }
 }

@@ -133,7 +133,6 @@
             this.label1.Size = new System.Drawing.Size(106, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "Min $5 max $100000";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -145,7 +144,6 @@
             this.label2.Size = new System.Drawing.Size(24, 13);
             this.label2.TabIndex = 8;
             this.label2.Text = "Op:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // GoButton
             // 

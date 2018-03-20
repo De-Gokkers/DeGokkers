@@ -151,6 +151,7 @@ namespace DeGokkers
                 for (int i = 0; i < playerarray.Length; i++)
                 {
                     playerarray[i].BetAmount = 0;
+                    playerarray[i].AnimalBet = -1;
                 }
             }
 
@@ -163,7 +164,10 @@ namespace DeGokkers
 
         public void Form1_Load(object sender, EventArgs e)
         {
-            
+            for (int i = 0; i < playerarray.Length; i++)
+            {
+                playerarray[i].Collect(winnerAnimal);
+            }
         }
 
         //in de onderstaande 3 methodes word bijgehouden op welke speler is gedukt om mee te gokken
@@ -323,43 +327,6 @@ namespace DeGokkers
 
         }
 
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        //in deze method:
-        //word gekeken met welke speler jij op hebt geklikt om vervolgens mee te wedden
-        //en als je dan iets invult bij het bedrag en dier nummer (wat standaard al is)dan worden de gok statussen van de speler veranderd
-        //naar het bedrag dat die gene gokt en op welk nummer
-        //word ook het gok bedrag op geslageneven als op welk nummer dat de speler gokt
-        //en mocht de speler meer willen hebben dan dat die heeft word het wed bedrag gezet naar het maximale aantal geld dat de speler heeft
-        //ps en ik heb al het commentaar erbij gezet met hoofdpijn #luke #dab
         private void button1_Click(object sender, EventArgs e)
         {
             GoButton.Enabled = true;

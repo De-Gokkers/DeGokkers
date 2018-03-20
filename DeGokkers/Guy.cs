@@ -74,6 +74,7 @@ namespace DeGokkers
                         {
                             this.TotalBet /= Form1.AmountBedsnr1;
                         }
+                        this.TotalBet /= 1;
                         TotalAmount += TotalBet;
                         break;
 
@@ -83,6 +84,7 @@ namespace DeGokkers
                         {
                             this.TotalBet /= Form1.AmountBedsnr2;
                         }
+                        this.TotalBet /= 1;
                         TotalAmount += TotalBet;
                         break;
 
@@ -92,6 +94,7 @@ namespace DeGokkers
                         {
                             this.TotalBet /= Form1.AmountBedsnr3;
                         }
+                        this.TotalBet /= 1;
                         TotalAmount += TotalBet;
                         break;
 
@@ -101,6 +104,7 @@ namespace DeGokkers
                         {
                             this.TotalBet /= Form1.AmountBedsnr4;
                         }
+                        this.TotalBet /= 1;
                         TotalAmount += TotalBet;
                         break;
 
@@ -110,6 +114,7 @@ namespace DeGokkers
                         {
                             this.TotalBet /= Form1.AmountBedsnr5;
                         }
+                        this.TotalBet /= 1;
                         TotalAmount += TotalBet;
                         break;
 
@@ -119,6 +124,7 @@ namespace DeGokkers
                         {
                             this.TotalBet /= Form1.AmountBedsnr6;
                         }
+                        this.TotalBet /= 1;
                         TotalAmount += TotalBet;
                         break;
                 }      

@@ -118,7 +118,7 @@
             this.BetButton.Name = "BetButton";
             this.BetButton.Size = new System.Drawing.Size(56, 21);
             this.BetButton.TabIndex = 4;
-            this.BetButton.Text = "Wed";
+            this.BetButton.Text = "Bet";
             this.BetButton.UseVisualStyleBackColor = true;
             this.BetButton.Click += new System.EventHandler(this.button1_Click);
             this.BetButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);

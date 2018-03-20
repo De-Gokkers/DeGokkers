@@ -10,9 +10,9 @@ namespace DeGokkers
     {
         public string Name; // De naam van de gokker
         public Bet MyBet; // Een instantie van Bet()
-        public int TotalAmount;
-        public int BetAmount;
-        public int AnimalBet;
+        public int TotalAmount = 100;
+        public int BetAmount = 5;
+        public int AnimalBet = 1;
         public int TotalBet;
 
         public static object GuyTotalAmount
@@ -22,10 +22,7 @@ namespace DeGokkers
 
         public void GuyMain()
         {
-            this.Name = "name";
-            this.TotalAmount = 100;
-            this.BetAmount = 5;
-            this.AnimalBet = 1;
+
         }
 
             //Deze twee velden zijn de gokkers GUI controls op het formulier
@@ -61,9 +58,7 @@ namespace DeGokkers
                     break;
 
             }
-                //Verander mijn label in de omschrijving van mijn weddenschap.
-                //Verander de label op mijn radioknop zodat deze mijn saldo laat zien.
-                //(Bijv. “Lidy heeft 43 euro.”)
+
         }
 
         public void Collect()
@@ -74,42 +69,36 @@ namespace DeGokkers
                 switch (Form1.AnimalWinner)
                 {
                     case 1:
-                        TotalAmount -= BetAmount;
                         this.TotalBet = Form1.TotalBet;
                         this.TotalBet /= Form1.AmountBedsnr1;
                         TotalAmount += TotalBet;
                         break;
 
                     case 2:
-                        TotalAmount -= BetAmount;
                         this.TotalBet = Form1.TotalBet;
                         this.TotalBet /= Form1.AmountBedsnr2;
                         TotalAmount += TotalBet;
                         break;
 
                     case 3:
-                        TotalAmount -= BetAmount;
                         this.TotalBet = Form1.TotalBet;
                         this.TotalBet /= Form1.AmountBedsnr3;
                         TotalAmount += TotalBet;
                         break;
 
                     case 4:
-                        TotalAmount -= BetAmount;
                         this.TotalBet = Form1.TotalBet;
                         this.TotalBet /= Form1.AmountBedsnr4;
                         TotalAmount += TotalBet;
                         break;
 
                     case 5:
-                        TotalAmount -= BetAmount;
                         this.TotalBet = Form1.TotalBet;
                         this.TotalBet /= Form1.AmountBedsnr5;
                         TotalAmount += TotalBet;
                         break;
 
                     case 6:
-                        TotalAmount -= BetAmount;
                         this.TotalBet = Form1.TotalBet;
                         this.TotalBet /= Form1.AmountBedsnr6;
                         TotalAmount += TotalBet;
@@ -120,7 +109,7 @@ namespace DeGokkers
             }
             else
             {
-                TotalAmount -= BetAmount;
+                
             }
             //Betaal mijn weddenschap uit.
             //Maak mijn weddenschap leeg.

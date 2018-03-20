@@ -70,46 +70,62 @@ namespace DeGokkers
                 {
                     case 1:
                         this.TotalBet = Form1.TotalBet;
-                        this.TotalBet /= Form1.AmountBedsnr1;
+                        if(Form1.AmountBedsnr1 > 1)
+                        {
+                            this.TotalBet /= Form1.AmountBedsnr1;
+                        }
                         TotalAmount += TotalBet;
                         break;
 
                     case 2:
                         this.TotalBet = Form1.TotalBet;
-                        this.TotalBet /= Form1.AmountBedsnr2;
+                        if (Form1.AmountBedsnr1 > 1)
+                        {
+                            this.TotalBet /= Form1.AmountBedsnr2;
+                        }
                         TotalAmount += TotalBet;
                         break;
 
                     case 3:
                         this.TotalBet = Form1.TotalBet;
-                        this.TotalBet /= Form1.AmountBedsnr3;
+                        if (Form1.AmountBedsnr1 > 1)
+                        {
+                            this.TotalBet /= Form1.AmountBedsnr3;
+                        }
                         TotalAmount += TotalBet;
                         break;
 
                     case 4:
                         this.TotalBet = Form1.TotalBet;
-                        this.TotalBet /= Form1.AmountBedsnr4;
+                        if (Form1.AmountBedsnr1 > 1)
+                        {
+                            this.TotalBet /= Form1.AmountBedsnr4;
+                        }
                         TotalAmount += TotalBet;
                         break;
 
                     case 5:
                         this.TotalBet = Form1.TotalBet;
-                        this.TotalBet /= Form1.AmountBedsnr5;
+                        if (Form1.AmountBedsnr1 > 1)
+                        {
+                            this.TotalBet /= Form1.AmountBedsnr5;
+                        }
                         TotalAmount += TotalBet;
                         break;
 
                     case 6:
                         this.TotalBet = Form1.TotalBet;
-                        this.TotalBet /= Form1.AmountBedsnr6;
+                        if (Form1.AmountBedsnr1 > 1)
+                        {
+                            this.TotalBet /= Form1.AmountBedsnr6;
+                        }
                         TotalAmount += TotalBet;
                         break;
-
-                }
-                 
+                }      
             }
             else
             {
-                
+
             }
             //Betaal mijn weddenschap uit.
             //Maak mijn weddenschap leeg.

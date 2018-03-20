@@ -151,6 +151,7 @@ namespace DeGokkers
                 for (int i = 0; i < playerarray.Length; i++)
                 {
                     playerarray[i].BetAmount = 0;
+                    playerarray[i].AnimalBet = -1;
                 }
             }
 
